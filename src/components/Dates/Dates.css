@@ -26,10 +26,6 @@
     font-size: 26px;
 }
 
-.listing-line {
-    width: 85%;
-}
-
 .tour-button-style {
     background-color: rgb(224,117,60);
     width: 25%;
@@ -40,4 +36,9 @@
 
 .tour-button-style:hover {
     background-color: rgb(255, 175, 132);
+}
+
+.listing-line {
+    width: 85%;
+    margin-bottom: 1rem;
 }
