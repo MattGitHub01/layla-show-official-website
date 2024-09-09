@@ -1,0 +1,48 @@
+.vid-intro-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid-wrapper {
+    margin: 2rem;
+}
+
+.video {
+    border: 2px solid white;
+}
+
+.vid-img-div {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: left;
+    margin: 20px;
+
+}
+
+.vid-intro-img {
+    width: 400px;
+    height: 400px;
+}
+
+.orange-line {
+    background-color: orange;
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.blue-line {
+    background-color: lightblue;
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.yellow-line {
+    background-color: yellow;
+    height: 6px;
+    width: 100%;
+    margin-bottom: 4px;
+}
