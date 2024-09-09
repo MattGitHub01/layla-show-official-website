@@ -1,0 +1,42 @@
+.tours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.tour-title {
+    display: block;
+    font-size: 26px;
+    padding: 2rem;
+}
+
+.tour-listing {
+    display: flex;
+    width: 80%;
+    font-size: 22px;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.tour-city {
+    color: rgb(224,117,60);
+    font-size: 26px;
+}
+
+.listing-line {
+    width: 85%;
+}
+
+.tour-button-style {
+    background-color: rgb(224,117,60);
+    width: 25%;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+}
+
+.tour-button-style:hover {
+    background-color: rgb(255, 183, 144);
+}
