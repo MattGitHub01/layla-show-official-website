@@ -4,12 +4,12 @@ function Nav() {
 
     return (
         <>
-            <div className="nav">
+            <nav className="nav">
                 <a>tour dates</a>
                 <a>about</a>
                 <a>cast</a>
                 <a>FAQ</a>
-            </div>
+            </nav>
             <div className="tour-btn-div">
                 <button className="tour-btn">TOUR DATES</button>
             </div>

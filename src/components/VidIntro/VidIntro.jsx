@@ -1,6 +1,6 @@
 // Remove Comment Later: import video from '../../assets/layla-show-final.mp4'
 import ReactPlayer from 'react-player'
-import thumbnail from '../../assets/cast-top.png'
+import thumbnail from '../../assets/cast-bottom.png'
 import img from '../../assets/art-title.png'
 import './VidIntro.css'
 // Thumbnail cast-top is a placeholder image and probably needs to be changed
@@ -8,7 +8,7 @@ import './VidIntro.css'
 function VidIntro() {
 
     return (
-        <>
+        <div className='vid-intro'>
             <div className="vid-intro-div">
                 <div className="vid-wrapper">
                     <ReactPlayer 
@@ -29,7 +29,7 @@ function VidIntro() {
             <div className='orange-line'></div>
             <hr className='blue-line'></hr>
             <hr className='yellow-line'></hr>
-        </>
+        </div>
     )
 }
 

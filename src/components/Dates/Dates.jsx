@@ -1,9 +1,15 @@
 function Dates() {
 
     return (
-        <>
-                        <p>I am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content! am testing this as new content!</p>
-        </>
+        <div className="tour-dates">
+            <h1>UPCOMING TOUR DATES</h1>
+            <div className="tour-listing">
+                <h3 className="tour-city">Loveland, CO</h3>
+                <p>May 11, 2024</p>
+                <p>Rialto Theater</p>
+                <hr></hr>
+            </div>
+        </div>
     )
 }
 

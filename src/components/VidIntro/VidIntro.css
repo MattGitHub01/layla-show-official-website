@@ -27,21 +27,24 @@
 }
 
 .orange-line {
-    background-color: orange;
+    background-color: rgb(224,117,60);
+    border: none;
     height: 6px;
     width: 100%;
     margin-bottom: 4px;
 }
 
 .blue-line {
-    background-color: lightblue;
+    background-color: rgb(56,126,155);
+    border: none;
     height: 6px;
     width: 100%;
     margin-bottom: 4px;
 }
 
 .yellow-line {
-    background-color: yellow;
+    background-color: rgb(235,198,71);
+    border: none;
     height: 6px;
     width: 100%;
     margin-bottom: 4px;
