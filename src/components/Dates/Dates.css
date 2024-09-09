@@ -15,8 +15,9 @@
 .tour-listing {
     display: flex;
     width: 80%;
-    font-size: 22px;
+    font-size: 20px;
     justify-content: space-between;
+    align-items: center;
     margin: 1rem;
 }
 
@@ -38,5 +39,5 @@
 }
 
 .tour-button-style:hover {
-    background-color: rgb(255, 183, 144);
+    background-color: rgb(255, 175, 132);
 }
