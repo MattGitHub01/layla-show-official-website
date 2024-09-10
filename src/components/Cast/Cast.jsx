@@ -8,7 +8,9 @@ function Cast() {
 
     return (
         <div className="cast" aria-label="cast members section">
-            <h1>Cast</h1>
+        <div className="cast-title">
+            <h1>CAST</h1>
+        </div>
             <div className="cast-card-area">
                 <div className="cast-card"
                     aria-label="list of cast members and descriptions">

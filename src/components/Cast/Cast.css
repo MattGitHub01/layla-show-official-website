@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.cast-title {
+    display: block;
+    font-size: 26px;
+    padding: 2rem;
+}
+
 .cast-card-area {
     display: flex;
     flex-direction: row;
