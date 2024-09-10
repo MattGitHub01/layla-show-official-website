@@ -8,10 +8,11 @@ import './VidIntro.css'
 function VidIntro() {
 
     return (
-        <div className='vid-intro'>
+        <div aria-label="Video Body Segment" className='vid-intro'>
             <div className="vid-intro-div">
                 <div className="vid-wrapper">
-                    <ReactPlayer 
+                    <ReactPlayer
+                        aria-label="Layla The Life and Music of Eric Clapton promotional video" 
                         className="video" 
                         url="https://youtu.be/p_KXY2cj-EM"
                         /* The URL is a placeholder, GitHub won't accept large files && I don't
@@ -23,10 +24,10 @@ function VidIntro() {
                         />
                 </div>
                 <div className='vid-img-div'>
-                    <img className='vid-intro-img' src={vidImg} />
+                    <img className='vid-intro-img' src={vidImg} alt="Layla and Other Assorted Eric Clapton Songs Logo" />
                 </div>
             </div>
-            <div className='orange-line'></div>
+            <hr className='orange-line'></hr>
             <hr className='blue-line'></hr>
             <hr className='yellow-line'></hr>
         </div>
