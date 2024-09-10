@@ -22,7 +22,7 @@ function Footer() {
                     alt="Production group instagram profile link"
                     />
                 </a>
-                <a className="youtube" href="">
+                <a className="youtube" href="https://www.youtube.com/channel/UCV9foKeW3pNIOOCOqq6_8Yg">
                     <img 
                     className="icon"
                     src={youtube}
