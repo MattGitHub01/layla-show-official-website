@@ -39,6 +39,7 @@ header {
     margin-right: 2rem;
     margin-left: 1rem;
     font-size: 24px;
+    vertical-align: middle;
 }
 
 .nav a:hover {
@@ -56,6 +57,7 @@ header {
     font-family: 'fontomod-bold', sans-serif;
     background-color: red;
     color: white;
+    text-decoration: none;
     font-weight: bolder;
     font-size: 26px;
     border: none;

@@ -1,3 +1,7 @@
+#about {
+    scroll-margin-top: -21rem;
+}
+
 .about {
     display: flex;
     flex-direction: column;

@@ -1,3 +1,7 @@
+#cast {
+    scroll-margin-top: 2rem;
+}
+
 .cast {
     display: flex;
     flex-direction: column;

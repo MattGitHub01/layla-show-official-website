@@ -14,14 +14,20 @@ import './Cast.css'
 function Cast() {
 
     return (
-        <div className="cast" aria-label="cast members section">
+        <div
+            id="cast" 
+            className="cast" 
+            aria-label="cast members section"
+        >
         <div className="cast-title">
             <h1>CAST</h1>
         </div>
             <div className="cast-card-area" aria-label='List of cast members'>
                 <div className="cast-card"
-                    aria-label="Jerry Skaw Vocals and Guitars">
-                    <img className="cast-img" src={jerryImg} alt="Photo of Jerry Skaw"/>
+                    aria-label="Jerry Skaw Vocals and Guitars"
+                >
+                    <img className="cast-img" src={jerryImg} alt="Photo of Jerry Skaw"
+                />
                     <h3><a>Jerry Skaw<br></br>Vocals & Guitar</a></h3>
                 </div>
                 <div className="cast-card"

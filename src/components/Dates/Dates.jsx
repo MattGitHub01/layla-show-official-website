@@ -3,7 +3,11 @@ import './Dates.css'
 function Dates() {
 
     return (
-        <div className="tours" aria-label="Tour dates list section">
+        <div 
+            id="dates"
+            className="tours" 
+            aria-label="Tour dates list section"
+        >
             <div className='tour-title'>
                 <h1>UPCOMING TOUR DATES</h1>
             </div>

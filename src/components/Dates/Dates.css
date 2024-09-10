@@ -1,3 +1,7 @@
+#dates {
+    scroll-margin-top: 8rem;
+}
+
 .tours {
     display: flex;
     flex-direction: column;

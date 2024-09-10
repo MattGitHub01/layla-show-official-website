@@ -7,12 +7,16 @@ function About() {
     // Images need to be updated once client provides the desired images,
     // these are a placeholder
     return (
-        <div className="about" aria-label="About the production section"> 
+        <div
+            id="about"
+            className="about" 
+            aria-label="About the production section"
+        > 
             <img
                 className="about-top-img"
                 src={aboutTopImg}
                 alt="Guitarists and drummer preforming live" 
-                />
+            />
             <img
                 className="about-header-img"
                 src={aboutHeaderImg}
