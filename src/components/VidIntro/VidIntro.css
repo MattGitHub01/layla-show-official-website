@@ -1,5 +1,7 @@
 .vid-intro-div {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -10,20 +12,19 @@
 
 .video {
     border: 2px solid white;
-    width: 80%;
 }
 
 .vid-img-div {
     display: flex;
-    width: 50%;
     justify-content: center;
     align-items: left;
-    margin: 20px;
+    margin: 1rem 1rem 1rem 3rem;
 }
 
 .vid-intro-img {
-    width: 60%;
-    height: 400px;
+    min-width: 400px;
+    min-height: 300px;
+    margin-left: 3rem;
 }
 
 .orange-line {
