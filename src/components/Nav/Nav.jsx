@@ -8,7 +8,7 @@ function Nav() {
                 <a href="#dates">tour dates</a>
                 <a href="#about">about</a>
                 <a href="#cast">cast</a>
-                <a href="../Faq/Faq.jsx">FAQ</a>
+                <a href="/faq">FAQ</a>
             </nav>
             <div className="tour-btn-div">
                 <a className="tour-btn" href="#dates">TOUR DATES</a>
