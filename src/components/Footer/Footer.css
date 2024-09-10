@@ -10,12 +10,19 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 2rem;
+}
+
+.link {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .icon {
     width: 2rem;
     height: 2rem;
-    margin: 4rem 1rem 3rem 1rem;
 }
 
 .copyright-txt {
