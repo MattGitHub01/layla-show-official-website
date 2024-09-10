@@ -14,7 +14,8 @@
     "git-filter-repo": "^0.0.30",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-player": "^2.16.0"
+    "react-player": "^2.16.0",
+    "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
@@ -28,7 +29,7 @@
     "globals": "^15.9.0",
     "vite": "^5.4.1"
   },
-  "description": "Website developed for Jerry Skaw and Layla Show Eric Clapton tribute production's promotional and personal use. Site uses React.js and Vite.js.",
+  "description": "Website developed for Jerry Skaw and Layla Show Eric Clapton tribute production's promotional and personal use. Site developed in React.js with Vite.js.",
   "main": "app.js",
   "keywords": [],
   "author": "",

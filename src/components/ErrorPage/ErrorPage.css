@@ -1,0 +1,21 @@
+.error-pg {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.err-h1 {
+    font-size: 70px;
+}
+
+.err-prompt {
+    font-size: 30px;
+}
+
+.err-msg {
+    font-size: 30px;
+    font-style: italic;
+}
