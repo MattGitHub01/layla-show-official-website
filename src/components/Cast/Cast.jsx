@@ -59,8 +59,7 @@ function Cast() {
                 src={castBottomImg}
                 alt="Image of live performance"
             />
-            <hr className='orange-line'></hr>
-            
+            <hr className='orange-line'></hr>    
         </div>
     )
 }

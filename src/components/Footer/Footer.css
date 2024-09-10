@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    margin: 4rem 1rem 3rem 1rem;
+}
+
+.facebook {
+
+}
+
+.instagram {
+    
+}
+
+.youtube {
+    
+}
+
+.copyright-txt {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
