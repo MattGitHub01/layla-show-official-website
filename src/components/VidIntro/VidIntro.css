@@ -18,13 +18,13 @@
     display: flex;
     justify-content: center;
     align-items: left;
-    margin: 1rem 1rem 1rem 3rem;
+    margin: 2rem;
 }
 
 .vid-intro-img {
-    min-width: 400px;
+    min-width: 500px;
     min-height: 300px;
-    margin-left: 3rem;
+    margin: 2rem;
 }
 
 .orange-line {
