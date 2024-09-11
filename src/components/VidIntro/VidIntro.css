@@ -1,7 +1,6 @@
 .vid-intro-div {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
 }

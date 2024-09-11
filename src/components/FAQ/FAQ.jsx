@@ -42,7 +42,10 @@ function Faq() {
 
     return (
         <div className="faq">
-            <Header />
+            <div className="faq-header-div">
+                <Header />
+            </div>
+
             <h1 className='faq-title'>FREQUENTLY ASKED QUESTIONS</h1>
             <div className="faq-accordion">
                 {faqData.map(({ title, content }) => (
