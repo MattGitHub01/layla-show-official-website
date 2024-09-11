@@ -7,6 +7,7 @@ function Footer() {
 
     return (
         <footer>
+            <hr className='orange-line-footer'></hr>  
             <div className="social-links" aria-label="Social media links">
                 <a className="facebook"
                     href="https://www.facebook.com/people/LAYLA-and-other-assorted-Eric-Clapton-songs-Musical-Showcase/61562647367534/"

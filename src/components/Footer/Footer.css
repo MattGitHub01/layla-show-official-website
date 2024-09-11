@@ -5,6 +5,14 @@ footer {
     align-items: center;
 }
 
+.orange-line-footer {
+    background-color: rgb(224,117,60);
+    border: none;
+    height: 3px;
+    width: 100vw;
+    margin-bottom: 4px; 
+}
+
 .social-links {
     display: flex;
     flex-direction: row;

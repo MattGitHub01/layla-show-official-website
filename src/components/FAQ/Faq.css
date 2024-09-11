@@ -1,0 +1,44 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.faq-img {
+
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.acc-item {
+    width: 80%;
+    margin: 1rem 3rem 1rem 3rem;
+}
+
+.acc-title {
+    display: flex;
+    font-size: 28px;
+    justify-content: space-between;
+}
+
+.acc-title:hover {
+    background-color: rgba(211, 211, 211, .3);
+}
+
+.acc-content {
+    font-size: 22px;
+}
+
+.faq-line {
+    height: 1px;
+    border: none;
+    background-color: gray;
+}
