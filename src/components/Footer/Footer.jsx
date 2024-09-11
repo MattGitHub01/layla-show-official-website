@@ -40,7 +40,7 @@ function Footer() {
                     />
                 </a>
             </div>
-            <p className="copyright-txt">&copy; 2024 Photos by PHOTOGRAPHER NAME HERE. Website by <a href="https://github.com/MattGitHub01">Tucker Crandall</a></p>
+            <p className="copyright-txt">&copy; 2024 Website by <a href="https://github.com/MattGitHub01">Tucker Crandall</a></p>
         </footer>
     )
 }

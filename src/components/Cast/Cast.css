@@ -4,6 +4,7 @@
 
 .cast {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -49,12 +50,4 @@
     width: 85%;
     height: 30rem;
     margin: 1rem;
-}
-
-.orange-line-footer {
-    background-color: rgb(224,117,60);
-    border: none;
-    height: 3px;
-    width: 100%;
-    margin-bottom: 4px; 
 }
