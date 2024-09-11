@@ -1,3 +1,5 @@
+import Header from '../Header/Header.jsx'
+import FaqImg from '../../assets/cast-bottom.png'
 import FaqAccordion from '../FaqAccordion/FaqAccordion.jsx'
 import Footer from '../Footer/Footer.jsx'
 import './Faq.css'
@@ -40,13 +42,14 @@ function Faq() {
 
     return (
         <div className="faq">
-            <img className="faq-img" src="" alt="Photo of Layla Show performance" />
-            <h1>Frequently Asked Questions</h1>
+            <Header />
+            <h1 className='faq-title'>FREQUENTLY ASKED QUESTIONS</h1>
             <div className="faq-accordion">
                 {faqData.map(({ title, content }) => (
                     <FaqAccordion title={title} content={content} />
                 ))}
             </div>
+            <img className="faq-img" src={FaqImg} alt="Photo of Layla Show performance" />
             <Footer />
         </div>
     )

@@ -10,7 +10,7 @@ const FaqAccordion = ({ title, content }) => {
                     className="acc-title"
                     onClick={() => setIsActive(!isActive)}
                 >
-                    <div>{title}</div>
+                    <button>{title}</button>
                     <div>{isActive ? '-' : '+'}</div>
                 </div>
                 {isActive && <div className="acc-content">{content}</div>}

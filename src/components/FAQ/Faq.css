@@ -6,8 +6,16 @@
     width: 100%;
 }
 
-.faq-img {
+.faq-title {
+    margin: 4rem 2rem 4rem 2rem;
+    font-size: 42px;
+}
 
+.faq-img {
+    width: 80%;
+    height: 450px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .faq-accordion {
@@ -16,17 +24,24 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+    margin-bottom: 2rem;
 }
 
 .acc-item {
     width: 80%;
-    margin: 1rem 3rem 1rem 3rem;
 }
 
 .acc-title {
     display: flex;
-    font-size: 28px;
+    font-size: 24px;
     justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+}
+
+.acc-title button {
+    border: none;
+    background: transparent;
+    font-size: 24px;
 }
 
 .acc-title:hover {
@@ -34,7 +49,8 @@
 }
 
 .acc-content {
-    font-size: 22px;
+    padding: 2rem 0 2rem 0;
+    font-size: 20px;
 }
 
 .faq-line {
