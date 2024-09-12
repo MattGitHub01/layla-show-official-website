@@ -11,7 +11,7 @@ const FaqAccordion = ({ title, content }) => {
                     onClick={() => setIsActive(!isActive)}
                 >
                     <button>{title}</button>
-                    <div>{isActive ? '-' : '+'}</div>
+                    <div className="acc-active-symbol">{isActive ? '-' : '+'}</div>
                 </div>
                 {isActive && <div className="acc-content">{content}</div>}
                 <hr className="faq-line"></hr>

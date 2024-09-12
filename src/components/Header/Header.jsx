@@ -8,12 +8,14 @@ function Header() {
     return (
         <header>
             <div className="header-nav">
-                <img className="header-img"
-                    src={navImg}
-                    onMouseEnter={e => e.currentTarget.src = navImgHover}
-                    onMouseOut={e => e.currentTarget.src = navImg}
-                    alt="Layla and other assorted eric clapton songs"
-                     />
+                <a href="/">
+                    <img className="header-img"
+                        src={navImg}
+                        onMouseEnter={e => e.currentTarget.src = navImgHover}
+                        onMouseOut={e => e.currentTarget.src = navImg}
+                        alt="Layla and other assorted eric clapton songs"
+                    />
+                </a>
                 <Nav />
             </div>
             
