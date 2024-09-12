@@ -1,6 +1,9 @@
 import facebook from '../../assets/facebook.svg'
+import facebookHov from '../../assets/facebook-hover.svg'
 import instagram from '../../assets/instagram.svg'
+import instagramHov from '../../assets/instagram-hover.svg'
 import youtube from '../../assets/youtube.svg'
+import youtubeHov from '../../assets/youtube-hover.svg'
 import './Footer.css'
 
 function Footer() {
@@ -16,7 +19,21 @@ function Footer() {
                     <img 
                         className="link"
                         src={facebook}
+                        onMouseEnter={e => e.currentTarget.src = facebookHov}
+                        onMouseOut={e => e.currentTarget.src = facebook}
                         alt="Production group facebook profile link"
+                    />
+                </a>
+                <a className="link" 
+                    href="https://www.youtube.com/channel/UCV9foKeW3pNIOOCOqq6_8Yg"
+                    target='_blank'
+                >
+                    <img 
+                        className="icon"
+                        src={youtube}
+                        onMouseEnter={e => e.currentTarget.src = youtubeHov}
+                        onMouseOut={e => e.currentTarget.src = youtube}
+                        alt="Production group youtube profile link"
                     />
                 </a>
                 <a className="instagram" 
@@ -26,17 +43,9 @@ function Footer() {
                     <img 
                         className="link"
                         src={instagram}
+                        onMouseEnter={e => e.currentTarget.src = instagramHov}
+                        onMouseOut={e => e.currentTarget.src = instagram}
                         alt="Production group instagram profile link"
-                    />
-                </a>
-                <a className="link" 
-                    href="https://www.youtube.com/channel/UCV9foKeW3pNIOOCOqq6_8Yg"
-                    target='_blank'
-                    >
-                    <img 
-                    className="icon"
-                    src={youtube}
-                    alt="Production group youtube profile link"
                     />
                 </a>
             </div>

@@ -43,19 +43,18 @@ function Faq() {
     ];
 
     return (
-        <div className="faq">
-            <div id="faq" className="faq-header-div">
-                <Header />
+        <div className="faq-wrapper">
+            <Header />
+            <div className="faq">
+                <h1 className="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
+                <div className="faq-accordion">
+                    {faqData.map(({ title, content }) => (
+                        <FaqAccordion title={title} content={content} />
+                    ))}
+                </div>
+                <img className="faq-img" src={FaqImg} alt="Photo of Layla Show performance" />
+                <Footer />
             </div>
-
-            <h1 className='faq-title'>FREQUENTLY ASKED QUESTIONS</h1>
-            <div className="faq-accordion">
-                {faqData.map(({ title, content }) => (
-                    <FaqAccordion title={title} content={content} />
-                ))}
-            </div>
-            <img className="faq-img" src={FaqImg} alt="Photo of Layla Show performance" />
-            <Footer />
         </div>
     )
 }

@@ -18,7 +18,6 @@ function Header() {
                 </a>
                 <Nav />
             </div>
-            
         </header>
     )
 }

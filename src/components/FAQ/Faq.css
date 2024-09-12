@@ -1,12 +1,12 @@
+body {
+    width: 100vw;
+    margin: 0;
+}
 .faq {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.faq-header-div {
-    width: 100vw;
 }
 
 .faq-title {
