@@ -1,0 +1,18 @@
+import Header from '../Header/Header.jsx'
+import Footer from '../Footer/Footer.jsx'
+import './LearnMorePH.css'
+
+function LearnMorePH() {
+    return(
+        <div className="learn-more-ph">
+            <Header />
+            <div className="ph-content">
+                <h1 className="ph-header">Venue Page Coming Soon!</h1>
+                <p className="ph-text">Unfortunately, the venue for this event has not posted information about this show on their website yet. <br></br><br></br>Come back soon for updates!</p>
+            </div>
+            <Footer />
+        </div>
+    )
+}
+
+export default LearnMorePH

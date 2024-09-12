@@ -1,0 +1,27 @@
+.learn-more-ph {
+    width: 100vw;
+}
+
+.ph-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ph-header {
+    color: white;
+    font-size: 44px;
+    width: 80%;
+    margin: 1rem;
+    margin-top: 4.5rem;
+}
+
+.ph-text {
+    color: white; 
+    font-size: 32px;
+    width: 80%;
+    margin: 2rem;
+    margin-bottom: 7.1rem;
+}

@@ -3,6 +3,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
 }
 
 .orange-line-footer {
@@ -10,7 +12,6 @@ footer {
     border: none;
     height: 3px;
     width: 100vw;
-    margin-bottom: 4px; 
 }
 
 .social-links {
@@ -37,4 +38,13 @@ footer {
     font-style: italic;
     font-size: 14px;
     margin-bottom: 2rem;
+}
+
+.github-link {
+    color: white;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: rgb(224,117,60);
 }

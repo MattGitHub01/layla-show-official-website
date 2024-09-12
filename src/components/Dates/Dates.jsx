@@ -17,7 +17,7 @@ function Dates() {
                 <p className="tour-location">Rialto Theater</p>
                 <a 
                     className="tour-button-style" 
-                    target='_blank'
+                    href="/coming-soon"
                 >
                     <button className="tour-button">LEARN MORE</button>
                 </a>
@@ -29,7 +29,7 @@ function Dates() {
                 <p className="tour-location">Ute Theater</p>
                 <a 
                     className="tour-button-style" 
-                    href="https://utetheater.com/event/forever-man-layla-other-assorted-eric-clapton-songs/" target='_blank'
+                    href="https://utetheater.com/event/forever-man-layla-other-assorted-eric-clapton-songs/"
                 >
                     <button className="tour-button">LEARN MORE</button>
                 </a>
@@ -41,7 +41,7 @@ function Dates() {
                 <p className="tour-location">Armory Brighton</p>
                 <a 
                     className="tour-button-style" 
-                    target='_blank'
+                    href="/coming-soon"
                 >
                     <button className="tour-button">LEARN MORE</button>
                 </a>
@@ -53,7 +53,7 @@ function Dates() {
                 <p className="tour-location">Broomfield Auditorium</p>
                 <a 
                     className="tour-button-style" 
-                    target='_blank'
+                    href="/coming-soon"
                 >
                     <button className="tour-button">LEARN MORE</button>
                 </a>
