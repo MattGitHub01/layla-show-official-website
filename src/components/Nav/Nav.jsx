@@ -1,18 +1,20 @@
+import { HashLink } from 'react-router-hash-link'
 import '../Header/Header.css'
 
 function Nav() {
-
+    
     return (
         <>
             <nav className="nav" aria-label="navigation menu">
-                <a href="/#dates">tour dates</a>
-                <a href="/#about">about</a>
-                <a href="/#cast">cast</a>
-                <a href="/faq">FAQ</a>
+                <HashLink className="nav-link" to="/#dates">tour dates</HashLink>
+                <HashLink className="nav-link" to="/#about">about</HashLink>
+                <HashLink className="nav-link" to="/#cast">cast</HashLink>
+                <a className="nav-link" href="/faq">FAQ</a>
             </nav>
             <div className="tour-btn-div">
-                <a className="tour-btn" href="#dates">TOUR DATES</a>
+                <HashLink className="tour-btn" to="/#dates">TOUR DATES</HashLink>
             </div>
+            
         </>
     )
 }

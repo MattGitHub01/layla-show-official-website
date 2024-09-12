@@ -5,6 +5,8 @@ import Footer from '../Footer/Footer.jsx'
 import './Faq.css'
 
 function Faq() {
+
+
     const faqData = [
         {
             title: 'What is the story behind Layla and Other Assorted Eric Clapton Songs?',
@@ -42,7 +44,7 @@ function Faq() {
 
     return (
         <div className="faq">
-            <div className="faq-header-div">
+            <div id="faq" className="faq-header-div">
                 <Header />
             </div>
 

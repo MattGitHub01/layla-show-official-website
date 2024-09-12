@@ -70,8 +70,7 @@ function Cast() {
                 className="cast-bottom-img"
                 src={castBottomImg}
                 alt="Image of live performance"
-            />
-            <hr className='orange-line-cast'></hr>    
+            />  
         </div>
     )
 }
