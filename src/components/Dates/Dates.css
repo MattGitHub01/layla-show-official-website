@@ -2,6 +2,35 @@
     scroll-margin-top: 8rem;
 }
 
+@media (max-width: 850px) {
+    .tour-listing {
+        flex-direction: column;
+    }
+
+    .tour-city {
+        margin: .5rem;
+    }
+
+    .tour-date {
+        margin: .5rem;
+    }
+
+    .tour-location {
+        margin: .5rem;
+    }
+
+    .tour-button-style {
+        margin: .5rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 851px) {
+    .tour-button-style {
+        width: 25%;
+    }
+}
+
 .tours {
     display: flex;
     flex-direction: column;
@@ -32,7 +61,6 @@
 
 .tour-button-style {
     background-color: rgb(224,117,60);
-    width: 25%;
     font-size: 24px;
     border: none;
     border-radius: 15px;
