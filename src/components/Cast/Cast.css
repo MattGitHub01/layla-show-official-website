@@ -39,14 +39,10 @@
     border: 3px solid rgb(224,117,60);
 }
 
-.cast-top-img {
-    width: 85%;
-    height: 30rem;
-    margin: 1rem;
-}
-
 .cast-bottom-img {
-    width: 85%;
-    height: 30rem;
+    min-width: 13rem;
+    max-width: 60rem;
+    width: 100%;
+    height: auto;
     margin: 1rem;
 }

@@ -9,8 +9,6 @@ import tudiImg from '../../assets/tudi-cast.jpg'
 import castBottomImg from '../../assets/cast-bottom.png'
 import './Cast.css'
 
-// Need new bottom of page image
-
 function Cast() {
 
     return (

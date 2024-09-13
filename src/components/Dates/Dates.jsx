@@ -9,7 +9,7 @@ function Dates() {
             aria-label="Tour dates list section"
         >
             <div className='tour-title'>
-                <h1>UPCOMING TOUR DATES</h1>
+                <h1>TOUR DATES</h1>
             </div>
             <div className="tour-listing" aria-label="individual tour date listing">
                 <h3 className="tour-city">LOVELAND, CO</h3>

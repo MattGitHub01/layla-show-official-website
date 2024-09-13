@@ -10,22 +10,30 @@
     text-align: center;
 }
 
-.about-top-img {
-    width: 85%;
-    height: 30rem;
+.about-top-img { 
+    min-width: 13rem;
+    max-width: 60rem;
+    width: 100%;
+    height: auto;
     margin: 1rem;
 }
 
 .about-header-img {
-    width: 45%;
-    height: 10rem;
+    min-width: 13rem;
+    max-width: 60rem;
+    width: 100%;
+    height: auto;
     margin: 1rem;
 }
 
 .about-text {
-    margin: 1rem 5rem 1rem 5rem;
-    line-height: 1.7;
-    font-size: 26px;
+    display: block;
+    max-width: 1000px;
+    margin: 1rem;
+    line-height: 1.9;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
 }
 
 .gray-text {
@@ -48,7 +56,9 @@
 }
 
 .about-bottom-img {
-    width: 85%;
-    height: 30rem;
+    min-width: 13rem;
+    max-width: 60rem;
+    width: 100%;
+    height: auto;
     margin: 1rem;
 }

@@ -25,10 +25,11 @@
     min-width: 19rem;
     max-width: 35rem;
     width: 100%;
-    min-height: 13;
+    min-height: 13rem;
     max-height: 25rem;
     height: auto;
-    margin: 2rem 1rem 2rem 1rem;
+    
+    margin: 2rem;
 }
 
 .orange-line {
