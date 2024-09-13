@@ -21,12 +21,13 @@ function VidIntro() {
                         controls="true" 
                         loop="true"
                         light={thumbnail}
-                        />
+                    />
                 </div>
                 <div className='vid-img-div'>
                     <img className='vid-intro-img'
                     src={vidImg}
-                    alt="Logo image text that says: Layla and Other Assorted Eric Clapton Songs" />
+                    alt="Logo image text that says: Layla and Other Assorted Eric Clapton Songs" 
+                />
                 </div>
             </div>
             <hr className='orange-line'></hr>

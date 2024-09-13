@@ -49,7 +49,7 @@ function Footer() {
                     />
                 </a>
             </div>
-            <p className="copyright-txt">&copy; 2024 Website by <a className="github-link" href="https://github.com/MattGitHub01">Tucker Crandall</a></p>
+            <p className="copyright-txt">&copy; 2024 Website by <a className="github-link" target='_blank' href="https://github.com/MattGitHub01">Tucker Crandall</a></p>
         </footer>
     )
 }

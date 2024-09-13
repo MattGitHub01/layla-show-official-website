@@ -8,7 +8,7 @@ function LearnMorePH() {
             <Header />
             <div className="ph-content">
                 <h1 className="ph-header">Venue Page Coming Soon!</h1>
-                <p className="ph-text">The venue hosting event has not yet posted information about this show on their website. <br></br><br></br>Come back soon for updates!</p>
+                <p className="ph-text">The venue hosting event has not yet posted information about this show. <br></br><br></br>Come back soon for updates!</p>
             </div>
             <Footer />
         </div>

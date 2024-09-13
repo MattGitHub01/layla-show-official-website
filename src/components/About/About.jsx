@@ -21,7 +21,7 @@ function About() {
                 className="about-header-img"
                 src={aboutHeaderImg}
                 alt="Image text reads: a celebration of a musical icon"
-                />
+            />
             <p className="about-text"><span className="gray-text">LAYLA and other assorted Eric Clapton songs </span> is a musical homage to one of the most influential guitarists and songwriters of our time, Eric Clapton. The show is presented in two acts–one acoustic and one electric–paying tribute to his life and musical career through story, multimedia and set to the beat of his popular and beloved hits including “Layla,” “Tears In Heaven,” “Change the World,” “Cocaine” and so many more.</p>
             <img className="about-bottom-img" src={aboutBottomImg} />
         </div>
