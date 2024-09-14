@@ -6,6 +6,10 @@
     background-color: rgb(224,117,60);
 }
 
+.hamburger-nav:hover > .hb-top-ln {
+    background-color: rgb(240, 163, 80);;
+}
+
 .hb-middle-ln {
     width: 100%;
     height: 3px;
@@ -13,6 +17,10 @@
     margin-top: 8px;
     margin-bottom: 8px;
     background-color: rgb(56,126,155);
+}
+
+.hamburger-nav:hover > .hb-middle-ln {
+    background-color: rgb(86, 188, 213);
 }
 
 .hb-bottom-ln {
@@ -24,9 +32,17 @@
     background-color: rgb(235,198,71);
 }
 
+.hamburger-nav:hover > .hb-bottom-ln {
+    background-color: rgb(248, 233, 102);
+}
+
 .hb-text {
     margin: 0;
     font-size: 10px;
     letter-spacing: 1.5px;
     color: rgb(112, 111, 111);
+}
+
+.hamburger-nav:hover > .hb-text {
+    color: rgb(193, 193, 193);
 }
