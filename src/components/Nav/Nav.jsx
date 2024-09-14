@@ -7,8 +7,8 @@ function Nav() {
         <>
             <nav className="nav" aria-label="navigation menu">
                 <HashLink className="nav-link" to="/#dates">tour dates</HashLink>
-                <HashLink className="nav-link" to="/#cast">cast</HashLink>
                 <HashLink className="nav-link" to="/#about">about</HashLink>
+                <HashLink className="nav-link" to="/#cast">cast</HashLink>
                 <a className="nav-link" href="/faq">FAQ</a>
             </nav>
             <div className="tour-btn-div">
