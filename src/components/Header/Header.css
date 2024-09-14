@@ -21,6 +21,10 @@ img {
 @media (max-width: 952px) {
     header {
         width: 100vw;
+    }
+
+    .header-nav {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -44,7 +48,6 @@ img {
 }
 
 header {
-    width: 100vw;
     position: sticky;
     top: 0;
     background-color: black;
