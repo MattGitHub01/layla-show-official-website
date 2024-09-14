@@ -13,10 +13,10 @@ function Cast() {
 
     return (
         <div
+            id="cast"
             className="cast" 
             aria-label="cast members section"
         >
-            <a id="cast"></a>
             <div className="cast-title">
                 <h1>CAST</h1>
             </div>

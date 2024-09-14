@@ -8,10 +8,10 @@ function About() {
     // these are a placeholder
     return (
         <div
+            id="about"
             className="about" 
             aria-label="About the production section"
         >
-            <a id="about"></a> 
             <img
                 className="about-top-img"
                 src={aboutTopImg}
