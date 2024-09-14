@@ -22,7 +22,8 @@
 }
 
 .vid-quote-div {
-
+    max-width: 400px;
+    max-height: 100px;
 }
 
 .quote-h1 {
@@ -35,19 +36,19 @@
     font-size: 24px;
     font-weight: 500;
     color: rgb(224,117,60);
-    width: 400px;
+
 }
 
 .quote-text-1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    color: rgb(235,198,71);
+    font-size: 28px;
+
 }
 
 .quote-text-2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: rgb(56,126,155);
+    font-size: 12px;
+
 }
 
 .vid-img-div {
