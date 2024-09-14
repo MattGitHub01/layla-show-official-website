@@ -47,9 +47,7 @@ function Faq() {
             <Header />
             <div className="faq">
                 <h1 className="faq-title">FREQUENTLY ASKED QUESTIONS</h1>
-                <div className="faq-accordion">
-                        <FaqAccordion />
-                </div>
+                <FaqAccordion />
                 <img className="faq-img" src={FaqImg} alt="Photo of Layla Show performance" />
                 <Footer />
             </div>

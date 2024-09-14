@@ -1,0 +1,32 @@
+.hb-top-ln {
+    width: 100%;
+    height: 3px;
+    border: none;
+    margin-bottom: 8px;
+    background-color: rgb(224,117,60);
+}
+
+.hb-middle-ln {
+    width: 100%;
+    height: 3px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: rgb(56,126,155);
+}
+
+.hb-bottom-ln {
+    width: 100%;
+    height: 3px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: -6px;
+    background-color: rgb(235,198,71);
+}
+
+.hb-text {
+    margin: 0;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: rgb(112, 111, 111);
+}

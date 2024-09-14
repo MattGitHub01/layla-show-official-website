@@ -1,6 +1,7 @@
 import Nav from '../Nav/Nav.jsx'
 import navImg from '../../assets/nav-title.png'
 import navImgHover from '../../assets/nav-title-hover.png'
+import HamburgerNav from '../HamburgerNav/HamburgerNav.jsx'
 import './Header.css'
 
 function Header() {
@@ -8,6 +9,7 @@ function Header() {
     return (
         <header>
             <div className="header-nav">
+                <HamburgerNav />
                 <a href="/">
                     <img className="header-img"
                         src={navImg}
