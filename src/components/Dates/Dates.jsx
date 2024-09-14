@@ -19,7 +19,7 @@ function Dates() {
                     className="tour-button-style" 
                     href="/coming-soon"
                 >
-                    <button className="tour-button">LEARN MORE</button>
+                    LEARN MORE
                 </a>
             </div>
             <hr className='listing-line'></hr>
@@ -31,7 +31,7 @@ function Dates() {
                     className="tour-button-style" 
                     href="https://utetheater.com/event/forever-man-layla-other-assorted-eric-clapton-songs/"
                 >
-                    <button className="tour-button">LEARN MORE</button>
+                    LEARN MORE
                 </a>
             </div>
             <hr className='listing-line'></hr>
@@ -43,7 +43,7 @@ function Dates() {
                     className="tour-button-style" 
                     href="/coming-soon"
                 >
-                    <button className="tour-button">LEARN MORE</button>
+                    LEARN MORE
                 </a>
             </div>
             <hr className='listing-line'></hr>            
@@ -55,7 +55,7 @@ function Dates() {
                     className="tour-button-style" 
                     href="/coming-soon"
                 >
-                    <button className="tour-button">LEARN MORE</button>
+                    LEARN MORE
                 </a>
             </div>
             <hr className='listing-line'></hr>
