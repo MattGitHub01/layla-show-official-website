@@ -1,0 +1,199 @@
+img {
+    width: 350px; /** Change to scale **/
+    height: 51px; /** Change to scale **/
+}
+
+.nav-link:hover {
+    color: orange
+}
+
+@media (min-width: 1336px) {
+
+    header {
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        background-color: black;
+        padding: .13rem;
+    }
+
+    .header-nav {
+        background-color: black;
+        opacity: 95%;
+        display: flex;
+        align-items: center;
+        color: white;
+        margin: .5rem;
+    }
+
+    .header-img {
+        margin-left: 1rem;
+    }
+
+    .nav { 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        margin-right: 2rem;
+        margin-left: 1rem;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 1335px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        background-color: black;
+        padding: .13rem;
+    }
+
+    .header-img {
+        margin-left: 1rem;
+    }
+
+    img {
+        width: 350px; /** Change to scale **/
+        height: 51px; /** Change to scale **/
+    }
+    
+    .nav-link:hover {
+        color: orange
+    }
+    
+    @media (min-width: 1336px) {
+    
+        header {
+            width: 100vw;
+            position: sticky;
+            top: 0;
+            background-color: black;
+            padding: .13rem;
+        }
+    
+        .header-nav {
+            background-color: black;
+            opacity: 95%;
+            display: flex;
+            align-items: center;
+            color: white;
+            margin: .5rem;
+        }
+    
+        .header-img {
+            margin-left: 1rem;
+        }
+    
+        .nav { 
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    
+        .nav-link {
+            text-decoration: none;
+            margin-right: 2rem;
+            margin-left: 1rem;
+            font-size: 24px;
+            vertical-align: middle;
+        }
+    }
+    
+    @media (max-width: 1335px) {
+    
+        header {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            position: sticky;
+            top: 0;
+            background-color: black;
+            padding: .13rem;
+        }
+    
+        .header-img {
+            margin-left: 1rem;
+        }
+    
+        .header-nav {
+            width: 100%;
+            background-color: black;
+            opacity: 95%;
+            display: flex;
+            align-items: center;
+            color: white;
+            margin: .5rem;
+        }
+    
+        .nav {
+            display: none;
+        }
+        
+        .tour-btn-div {
+            width: 100%;
+    
+            justify-content: right;
+            align-items: center;
+        }
+    }
+    
+    .tour-btn {
+        font-family: 'fontomod-bold', sans-serif;
+        background-color: red;
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: 26px;
+        border: none;
+        padding: .3rem;
+        border-radius: 5px;
+        margin-right: 1rem;
+    }
+    
+    .tour-btn:hover {
+        background-color: orange;
+    }
+
+    .nav {
+        display: none;
+    }
+    
+    .tour-btn-div {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+}
+
+.tour-btn {
+    font-family: 'fontomod-bold', sans-serif;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 26px;
+    border: none;
+    padding: .3rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.tour-btn:hover {
+    background-color: orange;
+}
