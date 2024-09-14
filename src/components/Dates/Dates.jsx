@@ -4,10 +4,10 @@ function Dates() {
 
     return (
         <div 
-            id="dates"
             className="tours" 
             aria-label="Tour dates list section"
         >
+            <a id="dates"></a>
             <div className='tour-title'>
                 <h1>TOUR DATES</h1>
             </div>
