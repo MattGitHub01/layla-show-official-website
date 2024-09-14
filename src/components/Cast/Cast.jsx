@@ -13,7 +13,7 @@ function Cast() {
 
     return (
         <div
-            id="cast" 
+            id="cast"
             className="cast" 
             aria-label="cast members section"
         >

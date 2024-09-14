@@ -1,6 +1,6 @@
-import aboutTopImg from '../../assets/cast-bottom.png'
+import aboutTopImg from '../../assets/about-top.png'
 import aboutTextImg from '../../assets/about-page-header.png'
-import aboutBottomImg from '../../assets/cast-top.png'
+import aboutBottomImg from '../../assets/about-bottom.png'
 import './About.css'
 
 function About() {

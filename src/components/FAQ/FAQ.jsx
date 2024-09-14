@@ -1,5 +1,5 @@
 import Header from '../Header/Header.jsx'
-import FaqImg from '../../assets/cast-bottom.png'
+import FaqImg from '../../assets/faq-bottom.png'
 import FaqAccordion from '../FaqAccordion/FaqAccordion.jsx'
 import Footer from '../Footer/Footer.jsx'
 import './Faq.css'
