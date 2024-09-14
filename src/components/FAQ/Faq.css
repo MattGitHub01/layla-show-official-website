@@ -62,6 +62,10 @@ body {
     font-size: 20px;
 }
 
+.acc-a-tag {
+    text-decoration: none;
+}
+
 .faq-line {
     height: 1px;
     border: none;
