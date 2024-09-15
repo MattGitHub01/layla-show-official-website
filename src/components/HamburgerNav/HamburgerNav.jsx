@@ -3,7 +3,7 @@ import HBNavOverlay from '../HamburgerNav/HBNavOverlay.jsx';
 import '../Header/Header.css'
 import './HamburgerNav.css'
 
-function HamburgerNav(props) {
+function HamburgerNav() {
     const [isOpen, setIsOpen] = useState(false);
 
     const closeOverlay = () => {
