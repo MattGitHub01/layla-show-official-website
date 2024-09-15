@@ -7,10 +7,8 @@ function HamburgerNav(props) {
     const [isOpen, setIsOpen] = useState(false);
 
     const closeOverlay = () => {
-        if (setIsOpen(false)) {
-            setIsOpen(false);
-            return
-        }
+        setIsOpen(false);
+        return
     }
 
     return (
