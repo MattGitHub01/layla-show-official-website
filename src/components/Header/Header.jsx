@@ -2,7 +2,6 @@ import Nav from '../Nav/Nav.jsx'
 import navImg from '../../assets/nav-title.png'
 import navImgHover from '../../assets/nav-title-hover.png'
 import HamburgerNav from '../HamburgerNav/HamburgerNav.jsx'
-import HBNavOverlay from '../HamburgerNav/HBNavOverlay.jsx'
 import './Header.css'
 
 function Header() {
@@ -22,7 +21,6 @@ function Header() {
                     <Nav />
                 </div>
             </header>
-            <HBNavOverlay />
         </>
     )
 }
