@@ -1,5 +1,4 @@
 import { HashLink } from 'react-router-hash-link'
-import { useState } from 'react'
 import facebook from '../../assets/facebook.svg'
 import facebookHov from '../../assets/facebook-hover.svg'
 import instagram from '../../assets/instagram.svg'
@@ -8,14 +7,14 @@ import youtube from '../../assets/youtube.svg'
 import youtubeHov from '../../assets/youtube-hover.svg'
 import './HBNavOverlay.css'
 
-function HBNavOverlay() {
-    const [isOpen, setIsOpen] = useState(true);
+function HBNavOverlay(props) {
+    const closeOverlay = props.closeOverlay;
 
     return (
         <nav className="hb-overlay">
             <div 
                 className="hb-close-nav" 
-                onClick={() => setIsOpen(!isOpen)} 
+                onClick={closeOverlay}
                 aria-label="Navigation menu, click to open menu options"
             >
                 <hr className="hb-cl-top"></hr>

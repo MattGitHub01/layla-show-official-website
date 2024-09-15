@@ -3,14 +3,21 @@ import HBNavOverlay from '../HamburgerNav/HBNavOverlay.jsx';
 import '../Header/Header.css'
 import './HamburgerNav.css'
 
-function HamburgerNav() {
+function HamburgerNav(props) {
     const [isOpen, setIsOpen] = useState(false);
+
+    const closeOverlay = () => {
+        if (setIsOpen(false)) {
+            setIsOpen(false);
+            return
+        }
+    }
 
     return (
         <>
             <div 
                 className="hamburger-nav" 
-                onClick={() => setIsOpen(!isOpen)} 
+                onClick={() => setIsOpen(true)} 
                 aria-label="Navigation menu, click to open menu options"
             >
                 <hr className="hb-top-ln"></hr>
@@ -19,7 +26,7 @@ function HamburgerNav() {
                 <text className="hb-text">MENU</text>
             </div>
             <div className="overlay-wrapper">
-                {isOpen && <HBNavOverlay />}
+                {isOpen && <HBNavOverlay closeOverlay={closeOverlay}/>}
             </div>
         </>
     )
