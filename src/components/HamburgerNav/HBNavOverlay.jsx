@@ -22,9 +22,9 @@ function HBNavOverlay(props) {
                 <text className="hb-cl-text">CLOSE</text>
             </div>
             <div className="hb-flexbox">
-                <HashLink className="hb-nav-link" to="/#tour-dates">tour dates</HashLink>
-                <HashLink className="hb-nav-link" to="/#about">about</HashLink>
-                <HashLink className="hb-nav-link" to="/#cast">cast</HashLink>
+                <HashLink className="hb-nav-link" to="/#tour-dates" onClick={closeOverlay}>tour dates</HashLink>
+                <HashLink className="hb-nav-link" to="/#about" onClick={closeOverlay}>about</HashLink>
+                <HashLink className="hb-nav-link" to="/#cast" onClick={closeOverlay}>cast</HashLink>
                 <a className="hb-nav-link" href="/faq">FAQ</a>
 
                 <div className="hb-social-links" aria-label="Social media links">
