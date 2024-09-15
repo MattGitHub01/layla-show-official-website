@@ -1,4 +1,4 @@
-@media (min-width: 952px) {
+@media (min-width: 956px) {
     .header-img {
         width: 18.3rem;
         height: 3.2rem;
@@ -18,7 +18,7 @@
     }
 }
 
-@media (max-width: 952px) {
+@media (max-width: 956px) {
     header {
         width: 100vw;
     }
