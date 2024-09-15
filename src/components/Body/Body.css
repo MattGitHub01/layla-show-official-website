@@ -1,6 +1,6 @@
 body {
     background: black;
-    animation: transsitionIn .5s;
+    animation: transsitionIn 1s;
   }
     
   @keyframes transsitionIn {

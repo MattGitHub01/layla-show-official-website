@@ -1,9 +1,8 @@
-// Remove Comment Later: import video from '../../assets/layla-show-final.mp4'
+// REMOVE BEFORE IMPORT: import video from '../../assets/layla-show-final.mp4'
 import ReactPlayer from 'react-player'
 import thumbnail from '../../assets/thumbnail.jpeg'
 import vidImg from '../../assets/art-title.png'
 import './VidIntro.css'
-// Thumbnail cast-top is a placeholder image and probably needs to be changed
 
 function VidIntro() {
 

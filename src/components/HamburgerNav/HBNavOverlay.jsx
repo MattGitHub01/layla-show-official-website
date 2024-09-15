@@ -7,11 +7,7 @@ import youtubeHov from '../../assets/youtube-hover.svg'
 import './HBNavOverlay.css'
 
 function HBNavOverlay(props) {
-    const clsOverlay = props.closeOverlay;
-    const closeOverlay = (e) => {
-        clsOverlay();
-        e.preventDefault();
-    };
+    const closeOverlay = props.closeOverlay;
 
     return (
         <nav className="hb-overlay">
