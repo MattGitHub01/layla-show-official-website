@@ -2,7 +2,7 @@ import '../Header/Header.css'
 function Nav() {
     const urlTour = () => {
         const baseUrl = '#' + urlHash.split('#')[0];
-        setTimeout(window.location.replace(baseUrl + '#tour-dates'), 4000);
+        location.assign(baseUrl + '#tour-dates');
     };
     const setUrlTour = (e) => {
         urlTour();
@@ -11,7 +11,7 @@ function Nav() {
 
     const urlAbt = () => {
         const baseUrl = '#' + urlHash.split('#')[0];
-        window.location.assign(baseUrl + '#about');
+        location.assign(baseUrl + '#about');
     };
     const setUrlAbt = (e) => {
         urlAbt();
@@ -20,7 +20,7 @@ function Nav() {
 
     const urlCast = () => {
         const baseUrl = '#' + urlHash.split('#')[0];
-        window.location.assign(baseUrl + '#cast');
+        location.assign(baseUrl + '#cast');
     };
     const setUrlCast = (e) => {
         urlCast();

@@ -1,4 +1,8 @@
 function scrollFun(scrollTarget) {
-    scrollTarget.scrollIntoView({ behavior: "smooth" });
+    setTimeout(
+        function() {
+            scrollTarget.scrollIntoView({ behavior: 'smooth'});
+        }, 30
+    );
 }
 export default scrollFun
