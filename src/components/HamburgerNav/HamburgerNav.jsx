@@ -10,9 +10,6 @@ function HamburgerNav() {
                 <hr className="hb-bottom-ln"></hr>
                 <text className="hb-text">MENU</text>
             </div>
-            <nav className="overlay">
-
-            </nav>
         </>
     )
 }

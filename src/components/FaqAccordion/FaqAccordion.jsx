@@ -18,6 +18,7 @@ const FaqAccordion = () => {
             <div className="acc-item">
                 <div
                     className="acc-title"
+                    aria-label="Frequently Asked Questions Question One. Click this title once to open the answer, click again to close."
                     onClick={() => setFaqOneA(!faqOneA)}
                 >
                     <button>What is the story behind Layla and Other Assorted Eric Clapton Songs?</button>
@@ -29,6 +30,7 @@ const FaqAccordion = () => {
             <div className="acc-item">
                 <div 
                     className="acc-title"
+                    aria-label="Frequently Asked Questions Question Two. Click this title once to open the answer, click again to close."
                     onClick={() => setFaqTwoA(!faqTwoA)}
                 >
                     <button>Where can I see the show?</button>
@@ -40,6 +42,7 @@ const FaqAccordion = () => {
             <div className="acc-item">
                 <div 
                     className="acc-title"
+                    aria-label="Frequently Asked Questions Question Three. Click this title once to open the answer, click again to close."
                     onClick={() => setFaqThreeA(!faqThreeA)}
                 >
                     <button>What is the running time of the show?</button>
@@ -51,6 +54,7 @@ const FaqAccordion = () => {
             <div className="acc-item">
                 <div 
                     className="acc-title"
+                    aria-label="Frequently Asked Questions Question Four. Click this title once to open the answer, click again to close."
                     onClick={() => setFaqFourA(!faqFourA)}
                 >
                     <button>Is the show appropriate for minors?</button>
@@ -62,6 +66,7 @@ const FaqAccordion = () => {
             <div className="acc-item">
                 <div 
                     className="acc-title"
+                    aria-label="Frequently Asked Questions Question Five. Click this title once to open the answer, click again to close."
                     onClick={() => setFaqFiveA(!faqFiveA)}
                 >
                     <button>Are photographs and video permitted during the show?</button>
@@ -73,6 +78,7 @@ const FaqAccordion = () => {
             <div className="acc-item">
                 <div 
                     className="acc-title"
+                    aria-label="Frequently Asked Questions Question Six. Click this title once to open the answer, click again to close."
                     onClick={() => setFaqSixA(!faqSixA)}
                 >
                     <button>Is there a cast album available for purchase?</button>
@@ -84,6 +90,7 @@ const FaqAccordion = () => {
             <div className="acc-item">
                 <div 
                     className="acc-title"
+                    aria-label="Frequently Asked Questions Question Seven. Click this title once to open the answer, click again to close."
                     onClick={() => setFaqSevenA(!faqSevenA)}
                 >
                     <button>Can I purchase merchandise at the show?</button>
@@ -95,6 +102,7 @@ const FaqAccordion = () => {
             <div className="acc-item">
                 <div 
                     className="acc-title"
+                    aria-label="Frequently Asked Questions Question Eight. Click this title once to open the answer, click again to close."
                     onClick={() => setFaqEightA(!faqEightA)}
                 >
                     <button>What is the best source of additional information about Eric Clapton?</button>
@@ -106,6 +114,7 @@ const FaqAccordion = () => {
             <div className="acc-item">
                 <div 
                     className="acc-title"
+                    aria-label="Frequently Asked Questions Question Nine. Click this title once to open the answer, click again to close."
                     onClick={() => setFaqNineA(!faqNineA)}
                 >
                     <button>Don&apos;t see your question answered here?</button>
