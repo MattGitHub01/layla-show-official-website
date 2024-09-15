@@ -1,0 +1,37 @@
+.hb-overlay {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hb-flexbox {
+    display: flex;
+    margin: 2rem;
+    margin-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hb-nav-link {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.hb-nav-link:hover {
+    color: orange
+}
+
+.tour-btn {
+    width: 230px;
+    font-family: 'fontomod-bold', sans-serif;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 26px;
+    border: none;
+    padding: .3rem;
+    border-radius: 5px;
+}

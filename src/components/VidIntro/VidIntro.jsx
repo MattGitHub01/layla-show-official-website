@@ -12,7 +12,7 @@ function VidIntro() {
             <div className="vid-intro-div">
                 <div className="vid-wrapper">
                     <ReactPlayer
-                        aria-label="Layla The Life and Music of Eric Clapton promotional video" 
+                        aria-label="Layla The Life and Music of Eric Clapton intro video" 
                         className="video" 
                         url="https://youtu.be/p_KXY2cj-EM"
                         /* The URL is a placeholder, GitHub won't accept large files && I don't
@@ -30,7 +30,8 @@ function VidIntro() {
                         <p className="quote-text-2">Hi-Def Photography and Films</p>
                     </div>
                     <div className="vid-img-div">
-                        <img className="vid-intro-img"
+                        <img 
+                            className="vid-intro-img"
                             src={vidImg}
                             alt="Logo image text that says: Layla and Other Assorted Eric Clapton Songs" 
                         />
