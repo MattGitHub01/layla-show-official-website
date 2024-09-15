@@ -11,13 +11,15 @@ function Header() {
             <header>
                 <div className="header-nav">
                     <HamburgerNav />
-                    <a href="/" aria-label="Move to the of the homepage link">
-                        <img className="header-img"
-                            src={navImg}
-                            onMouseEnter={e => e.currentTarget.src = navImgHover}
-                            onMouseOut={e => e.currentTarget.src = navImg}
-                        />
-                    </a>
+                    <div className="img-div">
+                        <a href="/" aria-label="Move to the of the homepage link">
+                            <img className="header-img"
+                                src={navImg}
+                                onMouseEnter={e => e.currentTarget.src = navImgHover}
+                                onMouseOut={e => e.currentTarget.src = navImg}
+                            />
+                        </a>
+                    </div>
                     <Nav />
                 </div>
             </header>
