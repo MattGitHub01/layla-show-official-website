@@ -12,7 +12,7 @@ function Nav() {
                 <a className="nav-link" href="/faq">FAQ</a>
             </nav>
             <div className="tour-btn-div">
-                <HashLink className="tour-btn" to="/#dates">TOUR DATES</HashLink>
+                <HashLink className="tour-btn" to="/#tour-dates">TOUR DATES</HashLink>
             </div>
             
         </>

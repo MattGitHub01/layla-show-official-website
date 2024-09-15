@@ -99,7 +99,7 @@
 }
 
 .hb-tour-btn {
-    width: 230px;
+    width: 222px;
     font-family: 'fontomod-bold', sans-serif;
     background-color: red;
     color: white;
@@ -110,4 +110,8 @@
     border: none;
     padding: .2rem;
     border-radius: 5px;
+}
+
+.hb-tour-btn:hover {
+    background-color: orange;
 }

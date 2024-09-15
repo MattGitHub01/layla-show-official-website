@@ -68,7 +68,7 @@ function HBNavOverlay(props) {
                         />
                     </a>
                 </div>
-                <HashLink className="hb-tour-btn" to="/#dates">TOUR DATES</HashLink>
+                <HashLink className="hb-tour-btn" to="/#tour-dates" onClick={closeOverlay}>TOUR DATES</HashLink>
             </div>
         </nav>
     )
