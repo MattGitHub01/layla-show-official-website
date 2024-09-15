@@ -7,7 +7,7 @@ function About() {
     // Images need to be updated once client provides the desired images,
     // these are a placeholder
     return (
-        <div
+        <div 
             id="about"
             className="about" 
             aria-label="About the production section"

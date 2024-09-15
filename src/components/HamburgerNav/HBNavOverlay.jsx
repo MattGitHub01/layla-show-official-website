@@ -1,4 +1,3 @@
-import { HashLink } from 'react-router-hash-link'
 import facebook from '../../assets/facebook.svg'
 import facebookHov from '../../assets/facebook-hover.svg'
 import instagram from '../../assets/instagram.svg'
@@ -22,9 +21,9 @@ function HBNavOverlay(props) {
                 <text className="hb-cl-text">CLOSE</text>
             </div>
             <div className="hb-flexbox">
-                <HashLink className="hb-nav-link" to="/#tour-dates" onClick={closeOverlay}>tour dates</HashLink>
-                <HashLink className="hb-nav-link" to="/#about" onClick={closeOverlay}>about</HashLink>
-                <HashLink className="hb-nav-link" to="/#cast" onClick={closeOverlay}>cast</HashLink>
+                <a className="hb-nav-link" href="/#tour-dates" onClick={closeOverlay}>tour dates</a>
+                <a className="hb-nav-link" href="/#about" onClick={closeOverlay}>about</a>
+                <a className="hb-nav-link" href="/#cast" onClick={closeOverlay}>cast</a>
                 <a className="hb-nav-link" href="/faq">FAQ</a>
 
                 <div className="hb-social-links" aria-label="Social media links">
@@ -68,7 +67,7 @@ function HBNavOverlay(props) {
                         />
                     </a>
                 </div>
-                <HashLink className="hb-tour-btn" to="/#tour-dates" onClick={closeOverlay}>TOUR DATES</HashLink>
+                <a className="hb-tour-btn" href="/#dates" onClick={closeOverlay}>TOUR DATES</a>
             </div>
         </nav>
     )
