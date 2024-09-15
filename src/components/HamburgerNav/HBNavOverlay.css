@@ -15,14 +15,36 @@
 
 .hb-nav-link {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
 }
 
 .hb-nav-link:hover {
     color: orange
 }
 
-.tour-btn {
+.hb-social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.hb-link {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.hb-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.hb-tour-btn {
     width: 230px;
     font-family: 'fontomod-bold', sans-serif;
     background-color: red;
@@ -30,8 +52,8 @@
     text-decoration: none;
     text-align: center;
     font-weight: bolder;
-    font-size: 26px;
+    font-size: 24px;
     border: none;
-    padding: .3rem;
+    padding: .2rem;
     border-radius: 5px;
 }
