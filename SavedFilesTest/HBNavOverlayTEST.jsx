@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import facebook from '../../assets/facebook.svg'
 import facebookHov from '../../assets/facebook-hover.svg'
 import instagram from '../../assets/instagram.svg'
@@ -7,17 +8,14 @@ import youtubeHov from '../../assets/youtube-hover.svg'
 import './HBNavOverlay.css'
 
 function HBNavOverlay(props) {
-    const clsOverlay = props.closeOverlay;
-    const closeOverlay = (e) => {
-        clsOverlay();
-        e.preventDefault();
-    };
+    const closeOverlay = props.closeOverlay;
+
 
     return (
         <nav className="hb-overlay">
             <div 
                 className="hb-close-nav" 
-                onClick={closeOverlay}
+                onClick={closeOverlay()}
                 aria-label="Navigation menu, click to open menu options"
             >
                 <hr className="hb-cl-top"></hr>
@@ -25,11 +23,40 @@ function HBNavOverlay(props) {
                 <text className="hb-cl-text">CLOSE</text>
             </div>
             <div className="hb-flexbox">
-                <a className="hb-nav-link" href="/#tour-dates" onClick={closeOverlay}>tour dates</a>
-                <a className="hb-nav-link" href="/#about" onClick={closeOverlay}>about</a>
-                <a className="hb-nav-link" href="/#cast" onClick={closeOverlay}>cast</a>
+                <Link 
+                    onClick={closeOverlay()}
+                    className="hb-nav-link" 
+                    to={{
+                        pathname: `/`,
+                        hash: `#about`,
+                    }}
+                    
+                >
+                    tour dates
+                </Link>
+                <Link 
+                    onClick={closeOverlay()}
+                    className="hb-nav-link" 
+                    to={{
+                        pathname: `/`,
+                        hash: `#about`,
+                    }}
+                    
+                >
+                    about
+                </Link>
+                <Link 
+                    onClick={closeOverlay()}
+                    className="hb-nav-link" 
+                    to={{
+                        pathname: `/`,
+                        hash: `#cast`,
+                    }}
+                    
+                >
+                    cast
+                </Link>
                 <a className="hb-nav-link" href="/faq">FAQ</a>
-
                 <div className="hb-social-links" aria-label="Social media links">
                     <a 
                         className="hb-link"
@@ -71,7 +98,16 @@ function HBNavOverlay(props) {
                         />
                     </a>
                 </div>
-                <a className="hb-tour-btn" href="/#dates" onClick={closeOverlay}>TOUR DATES</a>
+                <Link 
+                    className="hb-tour-btn" 
+                    to={{
+                        pathname: `/`,
+                        hash: `#tour-dates`,
+                    }}
+                    onClick={closeOverlay()}
+                >
+                    TOUR DATES
+                </Link>
             </div>
         </nav>
     )
