@@ -1,48 +1,36 @@
+@keyframes fadeOpen {
+    from {
+        opacity: .5;
+        top: -800px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
 .hb-overlay {
     display: block;
     position: absolute;
     width: 100vw;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    animation: fadeOpen .4s ease-in;
 }
 
-.open {
-    opacity: 1;
-    top: 0;
-    transition: all 1s;
-}
-
-.close { 
-    opacity:0;
-    top: -300px;
-    transition: all 1s;
-}
-
-@keyframes fadeOpen {
-    from {
-        top: -300px;
-    }
-
-    to {
-        top: 0;
-    }
-}
-
-@keyframes fadeClose {
-    from {
-        top: 0;
-    }
-
-    to {
-        top: -300px;
-    }
+.is-open { 
+    opacity: .5;
+    top: -1000px;
+    transition: all .4s;
 }
 
 .hb-close-nav {
     margin-top: 9px;
     margin-left: -5px;
-    position: fixed;
+    position: absolute;
     z-index: 1001;
     top: 14px;
     left: 20px;

@@ -24,28 +24,3 @@ html {
   margin: 0;
   color: white;
 }
-
-.hb-overlay {
-  animation: open .5s ease;
-}
-
-
-.hb-open-effect {
-  animation: open .5s ease;
-}
-
-.hb-close-effect {
-  animation: open .5s ease;
-}
-
-  @keyframes fadeOpen {
-      from{
-          top:-300px;
-          opacity: 0;
-      }
-
-      to{
-          top:0;
-          opacity: 1;
-      }
-}

@@ -18,7 +18,7 @@ function HBNavOverlay(props) {
     }
 
     return (
-        <nav className={isEffect ? "hb-overlay open" : "hb-overlay close"}>
+        <nav className={isEffect ? "hb-overlay" : "hb-overlay is-open"}>
             <div
                 className="hb-close-nav" 
                 onClick={closeOverlay}
