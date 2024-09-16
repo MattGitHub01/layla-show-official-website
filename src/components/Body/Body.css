@@ -1,9 +1,9 @@
 body {
     background: black;
-    animation: transsitionIn 1s;
+    animation: fadeIn .5s;
   }
     
-  @keyframes transsitionIn {
+  @keyframes fadeIn {
     from {
       background-color: black;
       opacity: 0;

@@ -1,3 +1,45 @@
+.hb-overlay {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.open > div {
+    animation: fadeOpen 3s ease;
+}
+
+.close > div {
+    animation: fadeClose 3s ease;
+}
+
+@keyframes fadeOpen {
+    from {
+        top:-300px;
+        opacity: 0;
+    }
+
+    to {
+        top:0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeClose {
+    from {
+        top:0;
+        opacity: 1;
+    }
+
+    to {
+        top:-300px;
+        opacity: 0;
+    }
+}
+
 .hb-top-ln {
     width: 100%;
     height: 3px;

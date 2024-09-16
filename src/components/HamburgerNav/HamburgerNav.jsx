@@ -5,17 +5,27 @@ import './HamburgerNav.css'
 
 function HamburgerNav() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isEffect, setIsEffect] = useState(false);
 
     const closeOverlay = () => {
-        setIsOpen(false);
+        setIsEffect(false);
+        setTimeout(() => {
+            setIsOpen(false);
+        }, 1000)
         return
     }
+
+    const clickHandler = () => {
+        setIsEffect(true);
+        setIsOpen(true);
+    }
+
 
     return (
         <>
             <div 
                 className="hamburger-nav" 
-                onClick={() => setIsOpen(true)} 
+                onClick={clickHandler}
                 aria-label="Navigation menu, click to open menu options"
             >
                 <hr className="hb-top-ln"></hr>
@@ -24,7 +34,11 @@ function HamburgerNav() {
                 <text className="hb-text">MENU</text>
             </div>
             <div className="overlay-wrapper">
-                {isOpen && <HBNavOverlay closeOverlay={closeOverlay}/>}
+                {isOpen && 
+                    <nav className={isEffect ? "hb-overlay open" : "hb-overlay close"}> 
+                        <HBNavOverlay closeOverlay={closeOverlay}/>
+                    </nav>
+                }
             </div>
         </>
     )

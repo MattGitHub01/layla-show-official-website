@@ -5,13 +5,14 @@ import instagramHov from '../../assets/instagram-hover.svg'
 import youtube from '../../assets/youtube.svg'
 import youtubeHov from '../../assets/youtube-hover.svg'
 import './HBNavOverlay.css'
+import './HamburgerNav.css'
 
 function HBNavOverlay(props) {
     const closeOverlay = props.closeOverlay;
 
     return (
-        <nav className="hb-overlay">
-            <div 
+        <>
+            <div
                 className="hb-close-nav" 
                 onClick={closeOverlay}
                 aria-label="Navigation menu, click to open menu options"
@@ -69,7 +70,7 @@ function HBNavOverlay(props) {
                 </div>
                 <a className="hb-tour-btn" href="/#dates" onClick={closeOverlay}>TOUR DATES</a>
             </div>
-        </nav>
+        </>
     )
 }
 
