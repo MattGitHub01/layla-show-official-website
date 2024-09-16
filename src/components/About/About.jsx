@@ -4,8 +4,6 @@ import aboutBottomImg from '../../assets/about-bottom.png'
 import './About.css'
 
 function About() {
-    // Images need to be updated once client provides the desired images,
-    // these are a placeholder
     return (
         <div 
             id="about"

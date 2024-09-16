@@ -4,7 +4,7 @@ import navImgHover from '../../assets/nav-title-hover.png'
 import HamburgerNav from '../HamburgerNav/HamburgerNav.jsx'
 import './Header.css'
 
-function Header(props, ref) {
+function Header() {
 
     return (
         <>
@@ -20,7 +20,7 @@ function Header(props, ref) {
                             />
                         </a>
                     </div>
-                    <Nav ref={ref} />
+                    <Nav />
                 </div>
             </header>
         </>
