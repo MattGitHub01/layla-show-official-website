@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import facebook from '../../assets/facebook.svg'
 import facebookHov from '../../assets/facebook-hover.svg'
 import instagram from '../../assets/instagram.svg'
@@ -8,10 +9,16 @@ import './HBNavOverlay.css'
 import './HamburgerNav.css'
 
 function HBNavOverlay(props) {
-    const closeOverlay = props.closeOverlay;
+    const [isEffect, setIsEffect] = useState(true);
+    const clsProp = props.closeOverlay;
+
+    function closeOverlay() {
+        setIsEffect(false);
+        clsProp();
+    }
 
     return (
-        <>
+        <nav className={isEffect ? "hb-overlay open" : "hb-overlay close"}>
             <div
                 className="hb-close-nav" 
                 onClick={closeOverlay}
@@ -70,7 +77,7 @@ function HBNavOverlay(props) {
                 </div>
                 <a className="hb-tour-btn" href="/#dates" onClick={closeOverlay}>TOUR DATES</a>
             </div>
-        </>
+        </nav>
     )
 }
 

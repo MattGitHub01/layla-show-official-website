@@ -1,3 +1,44 @@
+.hb-overlay {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.open {
+    opacity: 1;
+    top: 0;
+    transition: all 1s;
+}
+
+.close { 
+    opacity:0;
+    top: -300px;
+    transition: all 1s;
+}
+
+@keyframes fadeOpen {
+    from {
+        top: -300px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes fadeClose {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: -300px;
+    }
+}
+
 .hb-close-nav {
     margin-top: 9px;
     margin-left: -5px;

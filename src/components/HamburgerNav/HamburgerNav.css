@@ -1,46 +1,4 @@
-.hb-overlay {
-    display: block;
-    position: absolute;
-    width: 100vw;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.open > div {
-    animation: fadeOpen 3s ease;
-}
-
-.close > div {
-    animation: fadeClose 3s ease;
-}
-
-@keyframes fadeOpen {
-    from {
-        top:-300px;
-        opacity: 0;
-    }
-
-    to {
-        top:0;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeClose {
-    from {
-        top:0;
-        opacity: 1;
-    }
-
-    to {
-        top:-300px;
-        opacity: 0;
-    }
-}
-
-.hb-top-ln {
+.hamburger-top-ln {
     width: 100%;
     height: 3px;
     border: none;
@@ -48,11 +6,11 @@
     background-color: rgb(224,117,60);
 }
 
-.hamburger-nav:hover > .hb-top-ln {
+.hamburger-nav:hover > .hamburger-top-ln {
     background-color: rgb(240, 163, 80);;
 }
 
-.hb-middle-ln {
+.hamburger-middle-ln {
     width: 100%;
     height: 3px;
     border: none;
@@ -61,11 +19,11 @@
     background-color: rgb(56,126,155);
 }
 
-.hamburger-nav:hover > .hb-middle-ln {
+.hamburger-nav:hover > .hamburger-middle-ln {
     background-color: rgb(86, 188, 213);
 }
 
-.hb-bottom-ln {
+.hamburger-bottom-ln {
     width: 100%;
     height: 3px;
     border: none;
@@ -74,17 +32,17 @@
     background-color: rgb(235,198,71);
 }
 
-.hamburger-nav:hover > .hb-bottom-ln {
+.hamburger-nav:hover > .hamburger-bottom-ln {
     background-color: rgb(248, 233, 102);
 }
 
-.hb-text {
+.hamburger-text {
     margin: 0;
     font-size: 10px;
     letter-spacing: 1.5px;
     color: rgb(112, 111, 111);
 }
 
-.hamburger-nav:hover > .hb-text {
+.hamburger-nav:hover > .hamburger-text {
     color: rgb(193, 193, 193);
 }
