@@ -1,7 +1,9 @@
-// REMOVE BEFORE IMPORT: import video from '../../assets/layla-show-final.mp4'
+// import video from '../../assets/layla-show-final.mp4'
 import thumbnail from '../../assets/thumbnail.jpeg'
 import vidImg from '../../assets/art-title.png'
 import './VidIntro.css'
+
+//  VIDEO TEMP LINK https://youtu.be/p_KXY2cj-EM
 
 function VidIntro() {
 

@@ -2,7 +2,7 @@ function scrollFun(scrollTarget) {
     setTimeout(
         function() {
             scrollTarget.scrollIntoView({ behavior: 'smooth'});
-        }, 30
+        }, 40
     );
 }
 export default scrollFun
