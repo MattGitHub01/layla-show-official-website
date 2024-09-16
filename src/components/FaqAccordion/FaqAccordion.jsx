@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { HashLink } from 'react-router-hash-link'
 import '../Faq/Faq.css'
 
 const FaqAccordion = () => {
@@ -36,7 +35,7 @@ const FaqAccordion = () => {
                     <button>Where can I see the show?</button>
                     <div className="acc-active-symbol">{faqTwoA ? '-' : '+'}</div>
                 </div>
-                {faqTwoA && <div className="acc-content">Layla and Other Assorted Eric Clapton Songs is shown exclusively in theaters, auditoriums and performing art centers that are well-suited for musical productions. New dates and locations are added to the <HashLink to="/#dates">tour schedule</HashLink> throughout the year. We invite you to <HashLink to="/#about">contact us</HashLink> to recommend a suitable venue in your area for consideration.</div>}
+                {faqTwoA && <div className="acc-content">Layla and Other Assorted Eric Clapton Songs is shown exclusively in theaters, auditoriums and performing art centers that are well-suited for musical productions. New dates and locations are added to the <a href="/#tour-dates">tour schedule</a> throughout the year. We invite you to <a href="/#about">contact us</a> to recommend a suitable venue in your area for consideration.</div>}
                 <hr className="faq-line"></hr>
             </div>
             <div className="acc-item">
