@@ -2,7 +2,7 @@
     scroll-margin-top: 5vh;
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
     .tour-listing {
         flex-direction: column;
     }
@@ -25,7 +25,7 @@
     }
 }
 
-@media (min-width: 851px) {
+@media screen and (min-width: 851px) {
     .tour-button-style {
         width: 25%;
     }
