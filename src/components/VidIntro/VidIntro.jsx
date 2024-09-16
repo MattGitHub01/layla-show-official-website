@@ -1,5 +1,4 @@
 // REMOVE BEFORE IMPORT: import video from '../../assets/layla-show-final.mp4'
-import ReactPlayer from 'react-player'
 import thumbnail from '../../assets/thumbnail.jpeg'
 import vidImg from '../../assets/art-title.png'
 import './VidIntro.css'
@@ -7,20 +6,21 @@ import './VidIntro.css'
 function VidIntro() {
 
     return (
-        <div aria-label="Video Body Segment" className="vid-intro">
+        <div aria-label="Website video content area" className="vid-intro">
             <div className="vid-intro-div">
-                <div className="vid-wrapper">
-                    <ReactPlayer
-                        aria-label="Layla The Life and Music of Eric Clapton intro video" 
-                        className="video" 
-                        url="https://youtu.be/p_KXY2cj-EM"
-                        /* The URL is a placeholder, GitHub won't accept large files && I don't
-                        want to risk corrupting the file. The video will be removed for github
-                        upload then added for the published active website*/
-                        controls="true" 
-                        loop="true"
-                        light={thumbnail}
-                    />
+                <div className="vid-flex-element">
+                    <div className="vid-wrapper">
+                        <video
+                            aria-label="Layla The Life and Music of Eric Clapton intro video" 
+                            className="video" 
+                            poster={thumbnail}
+                            controls
+                            autoPlay
+                        > 
+                            <source src="https://youtu.be/p_KXY2cj-EM" type="video/mp4"/>
+                        </video>
+
+                    </div>
                 </div>
                 <div className="img-quot-wrapper">
                 <div className="vid-quote-div">

@@ -1,16 +1,28 @@
+@media (max-width: 900px) {
+    .vid-intro-div {
+        flex-wrap: wrap-reverse;
+    }
+}
+
 .vid-intro-div {
     display: flex;
-    flex-wrap: wrap-reverse;
+    
     justify-content: center;
     align-items: center;
 }
 
 .vid-wrapper {
-    margin: 2rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .video {
     border: 2px solid white;
+    width: 100% !important; 
+    max-width: 100em;
+    height: auto !important;
 }
 
 .img-quot-wrapper {
@@ -19,11 +31,13 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
+    margin: 1rem;
 }
 
 .vid-quote-div {
-    max-width: 400px;
+    max-width: 470px;
     max-height: 100px;
+    margin: 1rem;
 }
 
 .quote-main {
@@ -32,13 +46,11 @@
     font-size: 24px;
     font-weight: 500;
     color: rgb(224,117,60);
-
 }
 
 .quote-text-1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
-
 }
 
 .quote-text-2 {
@@ -51,14 +63,12 @@
     display: flex;
     justify-content: center;
     align-items: left;
+    margin: 1rem;
 }
 
 .vid-intro-img {
-    min-width: 19rem;
-    max-width: 30rem;
+    min-width: 17rem;
     width: 100%;
-    min-height: 13rem;
-    max-height: 20rem;
     height: auto;
 }
 
