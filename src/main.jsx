@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import App from './components/App.jsx'
 import Faq from './components/Faq/Faq.jsx'
 import PlaceHolder from './components/LearnMorePH/LearnMorePH.jsx'
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx'
@@ -8,8 +8,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom'
-import './index.css'
-
 
 const router = createBrowserRouter ([
   {
