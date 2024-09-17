@@ -1,23 +1,54 @@
 .form-page {
-    
+
 }
 
 .contact-form {
-
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin: 2rem;
 }
 
 .form-label {
-
+    font-size: 20px;
+    margin: .5rem 1rem .5rem 1rem;
 }
 
 .form-input {
-
+    width: 25%;
+    height: 2.1rem;
+    margin: .5rem 1rem .5rem 1rem;
+    border-radius: 15px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
 }
 
 .form-msg {
-
+    border-radius: 15px;
+    width: 50%;
+    height: 1%;
+    margin: 1rem;
+    font-size: 20px;
+    padding: 20px;
+    color: black;
 }
 
 .form-submit {
+    width: 170px;
+    font-family: 'fontomod-bold', sans-serif;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 24px;
+    border: none;
+    padding: .2rem;
+    margin: 1rem;
+    border-radius: 15px;
+}
 
+.form-submit:hover {
+    background-color: orange;
 }
