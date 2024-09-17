@@ -33,6 +33,7 @@ function HBNavOverlay(props) {
                 <a className="hb-nav-link" href="/#about" onClick={closeOverlay}>about</a>
                 <a className="hb-nav-link" href="/#cast" onClick={closeOverlay}>cast</a>
                 <a className="hb-nav-link" href="/faq">FAQ</a>
+                <a className="hb-nav-link" href="/contact-form">contact</a>
 
                 <div className="hb-social-links" aria-label="Social media links">
                     <a 

@@ -49,6 +49,7 @@ body {
 }
 
 .acc-title button {
+    cursor: pointer;
     border: none;
     background: transparent;
     font-size: 24px;

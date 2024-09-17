@@ -8,6 +8,7 @@ function Nav() {
                 <a className="nav-link" href="/#about">about</a>
                 <a className="nav-link" href="/#cast">cast</a>
                 <a className="nav-link" href="/faq">FAQ</a>
+                <a className="nav-link" href="/contact">contact</a>
             </nav>
             <div className="tour-btn-div">
                 <a className="tour-btn" href="/#tour-dates">TOUR DATES</a>
