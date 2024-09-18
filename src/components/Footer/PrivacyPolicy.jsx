@@ -1,4 +1,4 @@
-import './privacy-policy.css'
+import './PrivacyPolicy.css'
 
 function PrivacyPolicy() {
 
@@ -15,7 +15,7 @@ function PrivacyPolicy() {
         />        
         <span className="span-img"></span>
         <div data-custom-class="body">
-          <div>
+          <div className="priv-container">
             <strong>
               <span style={{ fontSize: 26 }}>
                 <span data-custom-class="title">
@@ -10789,7 +10789,6 @@ function PrivacyPolicy() {
                                                                                                             at{" "}
                                                                                                             <bdt className="question">
                                                                                                               Info@LaylaShow.com
-                                                                                                              or&nbsp;
                                                                                                             </bdt>
                                                                                                             <bdt className="statement-end-if-in-editor">
                                                                                                               <bdt className="block-component" />
@@ -10810,13 +10809,6 @@ function PrivacyPolicy() {
                                                                                                                 "rgb(89, 89, 89)"
                                                                                                             }}
                                                                                                           >
-                                                                                                            <span data-custom-class="body_text">
-                                                                                                              contact
-                                                                                                              us
-                                                                                                              by
-                                                                                                              post
-                                                                                                              at:
-                                                                                                            </span>
                                                                                                           </span>
                                                                                                         </span>
                                                                                                       </span>
@@ -10870,11 +10862,6 @@ function PrivacyPolicy() {
                                                                                                               }}
                                                                                                             >
                                                                                                               <span data-custom-class="body_text">
-                                                                                                                <bdt className="question">
-                                                                                                                  Forever
-                                                                                                                  Man
-                                                                                                                  LLC
-                                                                                                                </bdt>
                                                                                                               </span>
                                                                                                             </span>
                                                                                                           </span>
@@ -10908,7 +10895,6 @@ function PrivacyPolicy() {
                                                                                                   >
                                                                                                     <span data-custom-class="body_text">
                                                                                                       <bdt className="question">
-                                                                                                        __________
                                                                                                       </bdt>
                                                                                                       <span
                                                                                                         style={{
@@ -10940,7 +10926,6 @@ function PrivacyPolicy() {
                                                                                                   >
                                                                                                     <span data-custom-class="body_text">
                                                                                                       <bdt className="question">
-                                                                                                        __________
                                                                                                       </bdt>
                                                                                                       <span
                                                                                                         style={{
@@ -10955,9 +10940,7 @@ function PrivacyPolicy() {
                                                                                                         >
                                                                                                           <bdt className="block-component" />
                                                                                                           <bdt className="block-component" />
-                                                                                                          ,{" "}
                                                                                                           <bdt className="question">
-                                                                                                            CO
                                                                                                           </bdt>
                                                                                                           <bdt className="statement-end-if-in-editor" />
                                                                                                           <bdt className="block-component" />
@@ -10983,8 +10966,6 @@ function PrivacyPolicy() {
                                                                                                     }}
                                                                                                   >
                                                                                                     <bdt className="question">
-                                                                                                      United
-                                                                                                      States
                                                                                                       <span data-custom-class="body_text">
                                                                                                         <span
                                                                                                           style={{

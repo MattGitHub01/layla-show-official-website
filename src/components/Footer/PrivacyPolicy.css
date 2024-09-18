@@ -1,14 +1,11 @@
-* {
-        background-color: white;
-}
-
 .priv-body {
         background-color: white;
-        margin-right: 3rem !important;
-        margin-left: 1rem !important;
+        padding-right: 3rem !important;
+        padding-left: 1rem !important;
         display: flex;
         flex-direction: column;
         width: 95vw !important;
+        height: 100% !important;
 }
 
 [data-custom-class='body'], [data-custom-class='body'] * {
