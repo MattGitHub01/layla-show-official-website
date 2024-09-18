@@ -5,6 +5,7 @@ import Faq from './components/Faq/Faq.jsx'
 import PlaceHolder from './components/LearnMorePH/LearnMorePH.jsx'
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx'
 import Form from './components/Form/Form.jsx'
+import PrivPol from './components/Footer/PrivPol.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -32,6 +33,11 @@ const router = createBrowserRouter ([
     element: <Form />,
     errorElement: <ErrorPage />,
   },
+  {
+    path: '/privacy-policy',
+    element: <PrivPol />,
+    errorElement: <ErrorPage />,
+  }
 ]);
 
 createRoot(document.getElementById('root')).render(
