@@ -1,25 +1,36 @@
-import { useState } from 'react'
+import { useRef } from 'react'
 import Header from '../Header/Header.jsx'
 import Footer from '../Footer/Footer.jsx'
-import func from './formData.js'
+import emailjs from '@emailjs/browser'
 import './Form.css'
 
-function Form() { // Input IDs: name, email, subject, message
-    const [formData, setFormData] = useState('');
+function Form() {
 
-    const onSubmit = (e) => {
+    const form = useRef();
+    const publicKey = 'L4dHAxyg89sXaxRUJ';
+    const serviceID = 'service_u9j03qc';
+    const templateID = 'template_2t3islo';
+
+    const sendEmail = (e) => {
         e.preventDefault();
-        let dataObjCons = new FormData(e.target);
-        let formDataObj = Object.fromEntries(dataObjCons.entries());
-        setFormData(formDataObj);
-        func(formData);
-    }
-
+        emailjs
+            .sendForm(serviceID, templateID, form.current, {
+                publicKey: publicKey,
+            })
+            .then(
+                () => {
+                    console.log('Message Sent');
+                },
+                (error) => {
+                    console.log('Send Failed...', error.text);
+                },
+            );
+    };
 
     return(
         <> 
             <Header />
-            <form className="contact-form" onSubmit={onSubmit} action="#" aria-label="Contact the band using this form">
+            <form className="contact-form" ref={form} onSubmit={sendEmail} aria-label="Contact the band using this form">
                 <label className="form-label" htmlFor="name">Your Name (required)</label>
                 <input className="form-input" type="text" id="name" name="name" required></input>
                 <label className="form-label" htmlFor="email">Your Email (required)</label>
@@ -28,7 +39,7 @@ function Form() { // Input IDs: name, email, subject, message
                 <input className="form-input" type="text" id="subject" name="subject"></input>
                 <label className="form-label" htmlFor="message">Your Message</label>
                 <textarea className="form-msg" id="message" name="message" cols={5} rows={10}></textarea>
-                <input className="form-submit" type="submit" value="Submit" id="submit-btn"></input>
+                <input className="form-submit" type="submit" value="Submit"></input>
             </form>
             <Footer />
         </>

@@ -29,7 +29,7 @@ function formData(data) {
     const textEmail = dataEmail.toString();
     const textSubject = dataSubject.toString();
     const textMessage = dataMessage.toString();
-    formText = `${textName} ${textEmail} ${textSubject} ${textMessage}`;
+    formText = `Sender Name: ${textName} | Sender Email: ${textEmail} | Sender Subject: ${textSubject} | Sender Message: ${textMessage}`;
     download('form-input.txt')
 }
 
