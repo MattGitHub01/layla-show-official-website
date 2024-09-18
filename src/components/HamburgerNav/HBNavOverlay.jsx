@@ -42,7 +42,7 @@ function HBNavOverlay(props) {
                         target='_blank'
                     >
                         <img 
-                            className="hb-icon"
+                            className="hb-icon grow-icon"
                             src={facebook}
                             onMouseEnter={e => e.currentTarget.src = facebookHov}
                             onMouseOut={e => e.currentTarget.src = facebook}
@@ -55,7 +55,7 @@ function HBNavOverlay(props) {
                         target='_blank'
                     >
                         <img 
-                            className="hb-icon"
+                            className="hb-icon grow-icon"
                             src={youtube}
                             onMouseEnter={e => e.currentTarget.src = youtubeHov}
                             onMouseOut={e => e.currentTarget.src = youtube}
@@ -76,7 +76,7 @@ function HBNavOverlay(props) {
                         />
                     </a>
                 </div>
-                <a className="hb-tour-btn" href="/#dates" onClick={closeOverlay}>TOUR DATES</a>
+                <a className="hb-tour-btn" href="/#tour-dates" onClick={closeOverlay}>TOUR DATES</a>
             </div>
         </nav>
     )

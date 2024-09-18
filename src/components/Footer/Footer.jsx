@@ -18,7 +18,7 @@ function Footer() {
                     aria-label="Facebook profile link"
                 >
                     <img 
-                        className="icon"
+                        className="icon grow-fb"
                         width="2rem"
                         height="2rem"
                         src={facebook}
@@ -32,7 +32,7 @@ function Footer() {
                     aria-label="Youtube profile link"
                 >
                     <img 
-                        className="icon"
+                        className="icon grow-yt"
                         width="2rem"
                         height="2rem"
                         src={youtube}
@@ -46,7 +46,7 @@ function Footer() {
                     aria-label="Instagram profile link"
                 >
                     <img 
-                        className="icon ig-hov"
+                        className="icon"
                         width="2rem"
                         height="2rem"
                         src={instagram}
@@ -55,7 +55,7 @@ function Footer() {
                     />
                 </a>
             </div>
-            <p className="copyright-txt"><a className="privacy-policy" target="_blank" href="/privacy-policy"> Privacy Policy </a> &copy; 2024 Website by <a className="github-link" target='_blank' href="https://github.com/MattGitHub01">Tucker Crandall </a></p>
+            <p className="copyright-txt">&copy; 2024 Website by <a className="website-developer-link" target='_blank' href="https://github.com/MattGitHub01">Tucker Crandall</a>. <a className="privacy-policy" target="_blank" href="/privacy-policy"> Privacy Policy</a></p>
         </footer>
     )
 }

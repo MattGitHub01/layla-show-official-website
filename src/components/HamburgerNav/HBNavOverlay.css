@@ -106,6 +106,9 @@
 }
 
 .hb-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 2rem;
     height: 2rem;
     margin-right: 1rem;
@@ -115,6 +118,11 @@
 .hb-icon {
     width: 2rem;
     height: 2rem;
+}
+
+.grow-icon:hover {
+    width: 2.3rem;
+    height: 2.3rem;
 }
 
 .hb-tour-btn {

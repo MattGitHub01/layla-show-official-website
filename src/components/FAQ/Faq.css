@@ -33,26 +33,26 @@ body {
     margin-bottom: 2rem;
 }
 
-.acc-item {
-    width: 80%;
-}
-
 .acc-title {
     display: flex;
     font-size: 24px;
     justify-content: space-between;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 1rem .2rem;
 }
 
 .acc-active-symbol {
+    padding-right: .2rem;
     font-size: 30px;
 }
 
-.acc-title button {
+.acc-open-link {
+    width: 80%;
     cursor: pointer;
     border: none;
     background: transparent;
     font-size: 24px;
+    margin: 0;
+    padding-top: 0;
 }
 
 .acc-title:hover {
