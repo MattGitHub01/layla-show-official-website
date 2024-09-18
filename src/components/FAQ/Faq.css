@@ -62,6 +62,7 @@ body {
 .acc-content {
     padding: 2rem 0 2rem 0;
     font-size: 20px;
+    text-align: justify;
 }
 
 .acc-a-tag {
