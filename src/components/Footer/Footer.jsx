@@ -19,6 +19,8 @@ function Footer() {
                 >
                     <img 
                         className="icon"
+                        width="2rem"
+                        height="2rem"
                         src={facebook}
                         onMouseEnter={e => e.currentTarget.src = facebookHov}
                         onMouseOut={e => e.currentTarget.src = facebook}
@@ -31,6 +33,8 @@ function Footer() {
                 >
                     <img 
                         className="icon"
+                        width="2rem"
+                        height="2rem"
                         src={youtube}
                         onMouseEnter={e => e.currentTarget.src = youtubeHov}
                         onMouseOut={e => e.currentTarget.src = youtube}
@@ -42,7 +46,9 @@ function Footer() {
                     aria-label="Instagram profile link"
                 >
                     <img 
-                        className="icon"
+                        className="icon ig-hov"
+                        width="2rem"
+                        height="2rem"
                         src={instagram}
                         onMouseEnter={e => e.currentTarget.src = instagramHov}
                         onMouseOut={e => e.currentTarget.src = instagram}
