@@ -55,7 +55,7 @@ function Footer() {
                     />
                 </a>
             </div>
-            <p className="copyright-txt"><a target="_blank" href="/privacy-policy"> Privacy Policy </a></p> &copy; 2024 Website by <a className="github-link" target='_blank' href="https://github.com/MattGitHub01">Tucker Crandall </a>
+            <p className="copyright-txt"><a className="privacy-policy" target="_blank" href="./privacy-policy.html"> Privacy Policy </a> &copy; 2024 Website by <a className="github-link" target='_blank' href="https://github.com/MattGitHub01">Tucker Crandall </a></p>
         </footer>
     )
 }

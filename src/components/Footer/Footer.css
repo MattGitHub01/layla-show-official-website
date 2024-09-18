@@ -47,4 +47,15 @@ footer {
 
 .github-link:hover {
     color: rgb(224,117,60);
+    text-decoration: underline;
+}
+
+.privacy-policy {
+    color: white;
+    text-decoration: none;
+}
+
+.privacy-policy:hover  {
+    color: rgb(224,117,60);
+    text-decoration: underline;
 }
