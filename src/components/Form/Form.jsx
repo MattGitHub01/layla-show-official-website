@@ -32,7 +32,7 @@ function Form() {
     // }
 
     const form = useRef();
-    const mailjsPubKey = 'L4dHAxyg89sXaxRUJ';
+    const emailjsPubKey = 'L4dHAxyg89sXaxRUJ';
     const serviceID = 'service_u9j03qc';
     const templateID = 'template_2t3islo';
 
@@ -40,7 +40,7 @@ function Form() {
         e.preventDefault();
         emailjs
             .sendForm(serviceID, templateID, form.current, {
-                publicKey: mailjsPubKey,
+                publicKey: emailjsPubKey,
             })
             .then(
                 () => {
@@ -84,7 +84,7 @@ function Form() {
                         onChange={onChange}
                     /> */}
                 </div>
-                <button aria-label="Click this button to send email message through this contact form" className="form-submit" type="submit">{isSubmit ? 'Message Sent!' : 'Submit'}</button>
+                <button aria-label="Click this button to send email message through this contact form" className="form-submit" type="submit">{isSubmit ? 'Delivered!' : 'Send'}</button>
             </form>
             <Footer />
         </>
