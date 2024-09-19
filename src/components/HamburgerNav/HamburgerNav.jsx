@@ -5,7 +5,7 @@ import './HamburgerNav.css'
 
 function HamburgerNav() {
     const [isOpen, setIsOpen] = useState(false);
-
+    //isOpen and setIsOpen creates a state which is passed as a prop to HBNavOverlay, when true it opens the overlay, when false it closes it
     const closeOverlay = () => {
         setTimeout(() => {
             setIsOpen(false);

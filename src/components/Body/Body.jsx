@@ -7,6 +7,7 @@ import Cast from '../Cast/Cast.jsx'
 import './Body.css'
 
 function Body() {
+    // this useEffect function creates a delay before the screen scrolls. This is a bug fix to prevent the screen from scrolling before the page was entirely loaded, causing it to scroll to the wrong part of the screen
     useEffect(() => {
         if (document.readyState === 'complete' ) {
             const urlHash = window.location.href;

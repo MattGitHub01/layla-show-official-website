@@ -11,7 +11,7 @@ import './HamburgerNav.css'
 function HBNavOverlay(props) {
     const [isEffect, setIsEffect] = useState(true);
     const clsProp = props.closeOverlay;
-
+    // clsProp closes the nav menu with a prop from the HamburgerNav button to open it there and close it here. setIsEffect controls the close scroll up visual effect
     function closeOverlay() {
         setIsEffect(false);
         clsProp();
@@ -44,6 +44,7 @@ function HBNavOverlay(props) {
                         <img 
                             className="hb-icon grow-icon"
                             src={facebook}
+                            // the bottom two mouse events trigger the icon to change colors on hover
                             onMouseEnter={e => e.currentTarget.src = facebookHov}
                             onMouseOut={e => e.currentTarget.src = facebook}
                             alt="Production group facebook profile link"

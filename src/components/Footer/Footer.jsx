@@ -22,6 +22,7 @@ function Footer() {
                         width="2rem"
                         height="2rem"
                         src={facebook}
+                        // the bottom two mouse events trigger the icon to change colors on hover
                         onMouseEnter={e => e.currentTarget.src = facebookHov}
                         onMouseOut={e => e.currentTarget.src = facebook}
                     />

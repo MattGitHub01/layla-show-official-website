@@ -11,6 +11,7 @@ const FaqAccordion = () => {
     const [faqSevenA, setFaqSevenA] = useState(false);
     const [faqEightA, setFaqEightA] = useState(false);
     const [faqNineA, setFaqNineA] = useState(false);
+    // These useState variables control the opening and closing of the FAQ question items
 
     return (
         <div className="faq-accordion">
