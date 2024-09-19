@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 // import ReCAPTCHA from 'react-google-recaptcha'
 import Header from '../Header/Header.jsx'
 import Footer from '../Footer/Footer.jsx'
@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser'
 import './Form.css'
 
 function Form() {
+    const [isSubmit, setIsSubmit] = useState(false);
 
     // function onChange(captcha) {
     //     if (
@@ -31,7 +32,7 @@ function Form() {
     // }
 
     const form = useRef();
-    const publicKey = 'L4dHAxyg89sXaxRUJ';
+    const mailjsPubKey = 'L4dHAxyg89sXaxRUJ';
     const serviceID = 'service_u9j03qc';
     const templateID = 'template_2t3islo';
 
@@ -39,7 +40,7 @@ function Form() {
         e.preventDefault();
         emailjs
             .sendForm(serviceID, templateID, form.current, {
-                publicKey: publicKey,
+                publicKey: mailjsPubKey,
             })
             .then(
                 () => {
@@ -58,7 +59,10 @@ function Form() {
         sField.value = '';
         const mField = document.getElementById('message');
         mField.value = '';
-        // Clears input fields
+        // Clears form input fields
+        setIsSubmit(true);
+        setTimeout(() => {setIsSubmit(false)}, 3000);
+        // Change send button text to confirm message sent, sets a timer then resets text to Send
     };
 
     return(
@@ -80,7 +84,7 @@ function Form() {
                         onChange={onChange}
                     /> */}
                 </div>
-                <input className="form-submit" type="submit" value="Submit"></input>
+                <button className="form-submit" type="submit">{isSubmit ? 'Message Sent!' : 'Submit'}</button>
             </form>
             <Footer />
         </>
