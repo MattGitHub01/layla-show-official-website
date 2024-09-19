@@ -3,16 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "http://localhost:5000",
   "scripts": {
-    "start": "",
+    "start": "vite start",
     "build": "vite build",
+    "serverStart": "node server/server.js",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "body-parser": "^1.20.3",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "node": "^22.9.0",
