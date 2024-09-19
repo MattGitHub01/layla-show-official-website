@@ -34,7 +34,7 @@
     "vite": "^5.4.1"
   },
   "description": "Website developed for Jerry Skaw and Layla Show Eric Clapton tribute production's promotional and personal use. Site developed in React.js with Vite.js.",
-  "main": "main.jsx",
+  "main": "index.html",
   "keywords": [],
   "author": "",
   "license": "ISC"
