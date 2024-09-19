@@ -8,28 +8,29 @@ import './Form.css'
 function Form() {
     const [isSubmit, setIsSubmit] = useState(false);
 
-    // function onChange(captcha) {
-    //     if (
-    //         captcha === undefined ||
-    //         captcha === '' ||
-    //         captcha === null
-    //     ) {
-    //         console.log('Client: Inside submit: Unsuccessful!');
-    //     }
-    //     else {
-    //         console.log('Client: Inside submit: Successful!:', captcha);
-    //         fetch('index.js', {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Accept': 'application/json, text/plain */*',
-    //                 'Content-type': "application/json"
-    //             },
-    //             body: JSON.stringify({captcha: captcha})
-    //         })
-    //         .then((res) => res.json())
-    //         .then((data) => {console.log(data)})
-    //     }
-    // }
+    // onChange is for googleReCaptcha functionality communicating with backend Node.js server
+    function onChange(captcha) {
+        if (
+            captcha === undefined ||
+            captcha === '' ||
+            captcha === null
+        ) {
+            console.log('Client: Inside submit: Unsuccessful!');
+        }
+        else {
+            console.log('Client: Inside submit: Successful!:', captcha);
+            fetch('index.js', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain */*',
+                    'Content-type': "application/json"
+                },
+                body: JSON.stringify({captcha: captcha})
+            })
+            .then((res) => res.json())
+            .then((data) => {console.log(data)})
+        }
+    }
 
     const form = useRef();
     const emailjsPubKey = 'L4dHAxyg89sXaxRUJ';
@@ -78,11 +79,11 @@ function Form() {
                 <label className="form-label" htmlFor="message">Your Message</label>
                 <textarea className="form-msg" id="message" name="message" cols={5} rows={10}></textarea>
                 <div>
-                    {/* <ReCAPTCHA 
+                    <ReCAPTCHA 
                         render="explicit"
                         sitekey="6LeBmkgqAAAAAMvhSQhjmbYFziydhv26BI1liarT"
                         onChange={onChange}
-                    /> */}
+                    />
                 </div>
                 <button aria-label="Click this button to send email message through this contact form" className="form-submit" type="submit">{isSubmit ? 'Delivered!' : 'Send'}</button>
             </form>
