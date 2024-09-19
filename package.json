@@ -6,7 +6,7 @@
   "proxy": "http://localhost:5000",
   "scripts": {
     "start": "node server/server.js",
-    "build": "",
+    "build": "vite build",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
