@@ -15,6 +15,7 @@ function Header() {
                         <a href="/" aria-label="Move to the of the homepage link">
                             <img className="header-img"
                                 src={navImg}
+                                // the bottom two mouse events trigger the icon to change colors on hover
                                 onMouseEnter={e => e.currentTarget.src = navImgHover}
                                 onMouseOut={e => e.currentTarget.src = navImg}
                             />

@@ -15,7 +15,7 @@ function Footer() {
                 <a className="link"
                     href="https://www.facebook.com/people/LAYLA-and-other-assorted-Eric-Clapton-songs-Musical-Showcase/61562647367534/"
                     target="_blank" 
-                    aria-label="Facebook profile link"
+                    aria-label="Layla Show facebook link"
                 >
                     <img 
                         className="icon grow-fb"
@@ -30,7 +30,7 @@ function Footer() {
                 <a className="link" 
                     href="https://www.youtube.com/channel/UCV9foKeW3pNIOOCOqq6_8Yg"
                     target='_blank'
-                    aria-label="Youtube profile link"
+                    aria-label="Layla Show youtube link"
                 >
                     <img 
                         className="icon grow-yt"
@@ -42,9 +42,9 @@ function Footer() {
                     />
                 </a>
                 <a className="link" 
-                    href="" 
+                    href="https://www.instagram.com/laylashowmusic/" 
                     target='_blank'
-                    aria-label="Instagram profile link"
+                    aria-label="Layla Show instagram link"
                 >
                     <img 
                         className="icon"

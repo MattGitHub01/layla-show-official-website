@@ -84,7 +84,7 @@ function Form() {
                         onChange={onChange}
                     /> */}
                 </div>
-                <button className="form-submit" type="submit">{isSubmit ? 'Message Sent!' : 'Submit'}</button>
+                <button aria-label="Click this button to send email message through this contact form" className="form-submit" type="submit">{isSubmit ? 'Message Sent!' : 'Submit'}</button>
             </form>
             <Footer />
         </>

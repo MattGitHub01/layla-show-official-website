@@ -47,7 +47,7 @@ function HBNavOverlay(props) {
                             // the bottom two mouse events trigger the icon to change colors on hover
                             onMouseEnter={e => e.currentTarget.src = facebookHov}
                             onMouseOut={e => e.currentTarget.src = facebook}
-                            alt="Production group facebook profile link"
+                            alt="Layla show facebook profile link"
                         />
                     </a>
                     <a 
@@ -60,12 +60,12 @@ function HBNavOverlay(props) {
                             src={youtube}
                             onMouseEnter={e => e.currentTarget.src = youtubeHov}
                             onMouseOut={e => e.currentTarget.src = youtube}
-                            alt="Production group youtube profile link"
+                            alt="Layla show youtube profile link"
                         />
                     </a>
                     <a 
                         className="hb-link" 
-                        href="" 
+                        href="https://www.instagram.com/laylashowmusic" 
                         target='_blank'
                     >
                         <img 
@@ -73,7 +73,7 @@ function HBNavOverlay(props) {
                             src={instagram}
                             onMouseEnter={e => e.currentTarget.src = instagramHov}
                             onMouseOut={e => e.currentTarget.src = instagram}
-                            alt="Production group instagram profile link"
+                            alt="Layla show instagram profile link"
                         />
                     </a>
                 </div>
