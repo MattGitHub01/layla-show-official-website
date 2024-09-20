@@ -1,5 +1,5 @@
-// import video from '../../assets/layla-show-final.mp4'
-// **** ADD VIDEO TO FILESYSTEM ****
+import video from '../../assets/layla-show-final.mp4'
+
 //  VIDEO TEMP LINK https://youtu.be/p_KXY2cj-EM
 import thumbnail from '../../assets/thumbnail.jpeg'
 import vidImg from '../../assets/art-title.png'
@@ -19,7 +19,7 @@ function VidIntro() {
                             controls
                             autoPlay
                         > 
-                            <source src="https://youtu.be/p_KXY2cj-EM" type="video/mp4"/>
+                            <source src={video} type="video/mp4"/>
                         </video>
 
                     </div>

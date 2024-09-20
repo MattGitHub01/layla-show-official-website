@@ -12,25 +12,6 @@ import {
 } from 'react-router-dom'
 import './index.css'
 
-// function GetData() {
-//   const formInfo = {
-//     name: 'matt',
-//     passwrd: 'mattpwr'
-//   }
-
-//   useEffect(() => {
-//     fetch('/', {
-//       methon: "POST",
-//       headers: {
-//         'Content-type': "application/json"
-//       },
-//       body: JSON.stringify(formInfo)
-//     })
-//     .then(res => res.json())
-//     .then(data => setData(data))
-//   }, [])
-// }
-
 const clientRouter = createBrowserRouter ([
   {
     path: '/',

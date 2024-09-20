@@ -7,31 +7,32 @@ import './Form.css'
 
 function Form() {
     const [isSubmit, setIsSubmit] = useState(false);
+    const [captchaVal, setCaptchaVal] = useState(null);
 
-    // onChange is for googleReCaptcha functionality communicating with backend Node.js server
-    function onChange(captcha) {
-        if (
-            captcha === undefined ||
-            captcha === '' ||
-            captcha === null
-        ) {
-            console.log('Client: Inside submit: Unsuccessful!');
+    // This onChange arrow function is for GoogleReCAPTCHA functionality
+    const onCaptchaChange = (value) => {
+        setCapthcaVal(value);
+    };
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        if (!captchaVal) {
+            alert("complete the reCaptcha");
+            return
         }
-        else {
-            console.log('Client: Inside submit: Successful!:', captcha);
-            fetch('index.js', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json, text/plain */*',
-                    'Content-type': "application/json"
-                },
-                body: JSON.stringify({captcha: captcha})
-            })
-            .then((res) => res.json())
-            .then((data) => {console.log(data)})
-        }
+
+        const response = await fetch('/api/submit', {
+            methond: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ captcha: captchaValue }),
+        });
+        
+        const data = await response.json();
+        console.log(data);
     }
-
+    // The variables and the sendEmail function below this comment pertain to Email.js
     const form = useRef();
     const emailjsPubKey = 'L4dHAxyg89sXaxRUJ';
     const serviceID = 'service_u9j03qc';
@@ -82,7 +83,7 @@ function Form() {
                     <ReCAPTCHA 
                         render="explicit"
                         sitekey="6LeBmkgqAAAAAMvhSQhjmbYFziydhv26BI1liarT"
-                        onChange={onChange}
+                        onChange={onCaptchaChange}
                     />
                 </div>
                 <button aria-label="Click this button to send email message through this contact form" className="form-submit" type="submit">{isSubmit ? 'Delivered!' : 'Send'}</button>
