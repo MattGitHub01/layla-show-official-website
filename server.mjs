@@ -14,8 +14,16 @@ const PORT = process.env.PORT || 3000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname, 'dist')));
+const allowedOrigin = process.env.FRONTEND_URL;
 
+
+app.use(cors({
+    origin: allowedOrigin, // Change for production / deployment
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
+}));
+
+app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.json());
 
 // Handle POST requests to verify Google ReCAPTCHA

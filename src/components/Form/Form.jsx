@@ -52,8 +52,7 @@ function Form() {
         }
     };
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const sendEmail = () => {
         emailjs
             .sendForm(serviceID, templateID, form.current, {
                 publicKey: emailjsPubKey,
