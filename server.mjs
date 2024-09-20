@@ -18,7 +18,7 @@ const allowedOrigin = process.env.FRONTEND_URL;
 
 
 app.use(cors({
-    origin: allowedOrigin, // Change for production / deployment
+    origin: allowedOrigin, // Change for production / deployment 
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
 }));
