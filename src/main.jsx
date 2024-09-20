@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, /*useState*/ } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import Faq from './components/Faq/Faq.jsx'
@@ -12,7 +12,26 @@ import {
 } from 'react-router-dom'
 import './index.css'
 
-const router = createBrowserRouter ([
+// function GetData() {
+//   const formInfo = {
+//     name: 'matt',
+//     passwrd: 'mattpwr'
+//   }
+
+//   useEffect(() => {
+//     fetch('/', {
+//       methon: "POST",
+//       headers: {
+//         'Content-type': "application/json"
+//       },
+//       body: JSON.stringify(formInfo)
+//     })
+//     .then(res => res.json())
+//     .then(data => setData(data))
+//   }, [])
+// }
+
+const clientRouter = createBrowserRouter ([
   {
     path: '/',
     element: <App />,
@@ -42,6 +61,6 @@ const router = createBrowserRouter ([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={clientRouter} />
   </StrictMode>,
 )

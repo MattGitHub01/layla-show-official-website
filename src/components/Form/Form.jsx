@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-// import ReCAPTCHA from 'react-google-recaptcha'
+import ReCAPTCHA from 'react-google-recaptcha'
 import Header from '../Header/Header.jsx'
 import Footer from '../Footer/Footer.jsx'
 import emailjs from '@emailjs/browser'
