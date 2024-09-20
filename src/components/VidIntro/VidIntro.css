@@ -46,7 +46,7 @@
 .vid-wrapper {
     margin-top: 1rem;
     margin-bottom: 2rem;
-    margin-right: 1rem;  /* ?? */
+    margin-right: 1rem; /* */
     margin-left: 2rem;
     display: flex;
     justify-content: center;
@@ -77,7 +77,6 @@
 .quote-main {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 28px;
     font-weight: 500;
     color: rgb(224,117,60);
 }
