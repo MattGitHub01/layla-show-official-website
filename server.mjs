@@ -15,7 +15,6 @@ const __dirname = path.dirname(__filename);
 
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// Parse JSON
 app.use(express.json());
 
 // Handle POST requests to verify Google ReCAPTCHA

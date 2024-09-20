@@ -14,8 +14,7 @@ function Form() {
     const serviceID = 'service_u9j03qc';
     const templateID = 'template_2t3islo';
 
-    // This onChange arrow function is for GoogleReCAPTCHA functionality
-
+    //  onSubmit is for GoogleReCAPTCHA functionality
     const onSubmit = async (e) => {
         e.preventDefault();
         
@@ -64,7 +63,7 @@ function Form() {
                 },
             );
 
-        // Clears form input fields
+        // Clear form input fields
         form.current.reset();
         setIsSubmit(true);
         setTimeout(() => {setIsSubmit(false)}, 3000);
