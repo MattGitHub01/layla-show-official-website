@@ -6,7 +6,7 @@
   "scripts": {
     "start": "vite start",
     "build": "vite build",
-    "serverStart": "node server.js",
+    "serverStart": "node server.mjs",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
