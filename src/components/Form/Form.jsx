@@ -28,17 +28,18 @@ function Form() {
         setErrorMessage('');
 
         try {
-            const response = await fetch('/api/verify-captcha', {
+            const response = await fetch('http://localhost:3000/api/verify-captcha', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ captcha: captchaVal }),
             });
+            
             const data = await response.json();
 
             if (response.ok) {
-                // Send email via Email.js if captcha response is good
+                // Send email via Email.js if captcha response is successful
                 sendEmail();
             } else {
                 setErrorMessage(data.message || 'ReCAPTCHA verification failed!');
@@ -91,7 +92,7 @@ function Form() {
                 <div>
                     <ReCAPTCHA 
                         sitekey="6LfwOEoqAAAAAJlBJSR_aFAjTdbRF_9W8O7rrxQ2"
-                        onChange={setCaptchaVal}
+                        onChange={(value) => setCaptchaVal(value)}
                     />
                 </div> 
                 {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
