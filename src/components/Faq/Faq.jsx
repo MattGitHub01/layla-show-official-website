@@ -16,7 +16,7 @@ function Faq() {
                 <Footer />
             </div>
         </div>
-    ) 
+    )
 }
 
 export default Faq
