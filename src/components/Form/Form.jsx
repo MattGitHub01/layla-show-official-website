@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react'
-import ReCAPTCHA from 'react-google-recaptcha'
 import Header from '../Header/Header.jsx'
 import Footer from '../Footer/Footer.jsx'
 import emailjs from '@emailjs/browser'
@@ -7,29 +6,31 @@ import './Form.css'
 
 function Form() {
     const [isSubmit, setIsSubmit] = useState(false);
-    const [captchaVal, setCaptchaVal] = useState(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
+    const form = useRef();
+
+    const emailjsPubKey = 'L4dHAxyg89sXaxRUJ';
+    const serviceID = 'service_u9j03qc';
+    const templateID = 'template_2t3islo';
 
     // This onChange arrow function is for GoogleReCAPTCHA functionality
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        if (!captchaVal) {
-            setErrorMessage('Please complete the ReCAPTCHA!');
-            return
-        }
         
         setIsSubmitting(true);
         setErrorMessage('');
 
         try {
+            const token = await window.grecaptcha.execute('6LeBmkgqAAAAAMvhSQhjmbYFziydhv26BI1liarT',{ action: 'submit'});
+
             const response = await fetch('/api/verify-captcha', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ captcha: captchaVal }),
+                body: JSON.stringify({ captcha: token }),
             });
             const data = await response.json();
 
@@ -47,11 +48,6 @@ function Form() {
         }
 
     } 
-    // The variables and the sendEmail function below this comment pertain to Email.js
-    const form = useRef();
-    const emailjsPubKey = 'L4dHAxyg89sXaxRUJ';
-    const serviceID = 'service_u9j03qc';
-    const templateID = 'template_2t3islo';
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -67,19 +63,12 @@ function Form() {
                     console.log('Send Failed...', error.text);
                 },
             );
-            //Sends email to email.js API
-        const nField = document.getElementById('name');
-        nField.value = '';
-        const eField = document.getElementById('email');
-        eField.value = '';
-        const sField = document.getElementById('subject');
-        sField.value = '';
-        const mField = document.getElementById('message');
-        mField.value = '';
+
         // Clears form input fields
+        form.current.reset();
         setIsSubmit(true);
         setTimeout(() => {setIsSubmit(false)}, 3000);
-        // Change send button text to confirm message sent, sets a timer then resets text to Send
+
     };
 
     return(
@@ -94,17 +83,14 @@ function Form() {
                 <input className="form-input" type="text" id="subject" name="subject"></input>
                 <label className="form-label" htmlFor="message">Your Message</label>
                 <textarea className="form-msg" id="message" name="message" cols={5} rows={10}></textarea>
-                <div>
-                    <ReCAPTCHA 
-                        render="explicit"
-                        sitekey="6LeBmkgqAAAAAMvhSQhjmbYFziydhv26BI1liarT"
-                        onChange={setCaptchaVal}
-                    />
-                </div>
                 {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-                <button aria-label="Click this button to send email message through this contact form" 
-                disabled={!captchaVal || isSubmitting}
-                className="form-submit" type="submit">{isSubmit ? 'Delivered!' : 'Send'}</button>
+                <button 
+                    aria-label="Click this button to send email message through this contact form" 
+                    disabled={isSubmitting}
+                    className="form-submit" 
+                    type="submit">
+                    {isSubmit ? 'Delivered!' : 'Send'}
+                </button>
             </form>
             <Footer />
         </>
