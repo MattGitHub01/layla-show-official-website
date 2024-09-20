@@ -28,7 +28,7 @@ function Form() {
         setErrorMessage('');
 
         try {
-            const response = await fetch('http://layla-show-official-website-production.up.railway.app/api/verify-captcha', {
+            const response = await fetch('http://layla-show-official-website-production.up.railway.app:8080/api/verify-captcha', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
