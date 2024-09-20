@@ -19,7 +19,7 @@ function VidIntro() {
                             controls
                             autoPlay
                         > 
-                            <source src="" type="video/mp4"/>
+                            <source src="https://youtu.be/p_KXY2cj-EM" type="video/mp4"/>
                         </video>
 
                     </div>
