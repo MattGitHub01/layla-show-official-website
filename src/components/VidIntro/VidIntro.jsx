@@ -22,7 +22,7 @@ function VidIntro() {
                             <source src="https://youtu.be/p_KXY2cj-EM" type="video/mp4"/>
                         </video>
 
-                    </div>
+                    </div> 
                 </div>
                 <div className="img-quot-wrapper">
                 <div className="vid-quote-div">
