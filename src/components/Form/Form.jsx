@@ -10,27 +10,24 @@ function Form() {
     const [captchaVal, setCaptchaVal] = useState(null);
 
     // This onChange arrow function is for GoogleReCAPTCHA functionality
-    const onCaptchaChange = (value) => {
-        setCapthcaVal(value);
-    };
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        if (!captchaVal) {
-            alert("complete the reCaptcha");
+    const onSubmit = async (e) => {
+        e.preventDefault();
+        if (captchaVal) {
+            const response = await fetch('/api/verify-captcha', {
+                methond: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ captcha: captchaValue }),
+            });
+            const data = await response.json();
+            console.log(data);
+            sendEmail();
+        } else {
+            console.error("Redo the reCaptcha");
             return
         }
-
-        const response = await fetch('/api/submit', {
-            methond: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ captcha: captchaValue }),
-        });
-        
-        const data = await response.json();
-        console.log(data);
     }
     // The variables and the sendEmail function below this comment pertain to Email.js
     const form = useRef();
@@ -70,7 +67,7 @@ function Form() {
     return(
         <> 
             <Header />
-            <form className="contact-form" ref={form} onSubmit={sendEmail} aria-label="Contact the band using this form">
+            <form className="contact-form" ref={form} onSubmit={onSubmit} aria-label="Contact the band using this form">
                 <label className="form-label" htmlFor="name">Your Name (required)</label>
                 <input className="form-input" type="text" id="name" name="name" required></input>
                 <label className="form-label" htmlFor="email">Your Email (required)</label>
@@ -83,14 +80,13 @@ function Form() {
                     <ReCAPTCHA 
                         render="explicit"
                         sitekey="6LeBmkgqAAAAAMvhSQhjmbYFziydhv26BI1liarT"
-                        onChange={onCaptchaChange}
+                        onChange={setCaptchaVal}
                     />
                 </div>
                 <button aria-label="Click this button to send email message through this contact form" className="form-submit" type="submit">{isSubmit ? 'Delivered!' : 'Send'}</button>
             </form>
             <Footer />
         </>
-
             
     )
 }
