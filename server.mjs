@@ -33,9 +33,9 @@ app.post('/api/verify-captcha', async (req, res) => {
         const { success } = response.data;
 
         if (success) {
-            return res.status(200).json({ message: "Success! CAPTCHA verified!" });
+            return res.status(200).json({ message: "Success!  ReCAPTCHA verified!" });
         } else {
-            return res.status(400).json({ message: "Failed! CAPTCHA not verified!" });
+            return res.status(400).json({ message: "Failed! ReCAPTCHA not verified!" });
         }
     } catch (error) {
         console.error(error);
