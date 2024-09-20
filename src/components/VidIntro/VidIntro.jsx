@@ -26,7 +26,7 @@ function VidIntro() {
                 </div>
                 <div className="img-quot-wrapper">
                 <div className="vid-quote-div">
-                        <h1 className="quote-main"><span>&quot;</span> A captivating fusion of acoustic and electric in one incredible presentation. <span>&quot;</span></h1>
+                        <p className="quote-main"><span>&quot;</span>A captivating fusion of acoustic and electric in one incredible presentation.<span>&quot;</span></p>
                         <p className="quote-text-1">Scott Malonson</p>
                         <p className="quote-text-2">Hi-Def Photography and Films</p>
                     </div>
