@@ -8,27 +8,45 @@ import './Form.css'
 function Form() {
     const [isSubmit, setIsSubmit] = useState(false);
     const [captchaVal, setCaptchaVal] = useState(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
 
     // This onChange arrow function is for GoogleReCAPTCHA functionality
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        if (captchaVal) {
+        if (!captchaVal) {
+            setErrorMessage('Please complete the ReCAPTCHA!');
+            return
+        }
+        
+        setIsSubmitting(true);
+        setErrorMessage('');
+
+        try {
             const response = await fetch('/api/verify-captcha', {
-                methond: 'POST',
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ captcha: captchaValue }),
+                body: JSON.stringify({ captcha: captchaVal }),
             });
             const data = await response.json();
-            console.log(data);
-            sendEmail();
-        } else {
-            console.error("Redo the reCaptcha");
-            return
+
+            if (response.ok) {
+                // Send email via Email.js if captcha response is good
+                sendEmail();
+            } else {
+                setErrorMessage(data.message || 'ReCAPTCHA verification failed!')
+            }
+        } catch (error) {
+            console.error(error);
+            setErrorMessage("An error occurred while verifying ReCAPTCHA");
+        } finally {
+            setIsSubmitting(false);
         }
-    }
+
+    } 
     // The variables and the sendEmail function below this comment pertain to Email.js
     const form = useRef();
     const emailjsPubKey = 'L4dHAxyg89sXaxRUJ';
@@ -83,7 +101,10 @@ function Form() {
                         onChange={setCaptchaVal}
                     />
                 </div>
-                <button aria-label="Click this button to send email message through this contact form" className="form-submit" type="submit">{isSubmit ? 'Delivered!' : 'Send'}</button>
+                {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+                <button aria-label="Click this button to send email message through this contact form" 
+                disabled={!captchaVal || isSubmitting}
+                className="form-submit" type="submit">{isSubmit ? 'Delivered!' : 'Send'}</button>
             </form>
             <Footer />
         </>
