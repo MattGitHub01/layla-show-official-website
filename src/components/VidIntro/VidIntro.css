@@ -31,7 +31,7 @@
 }
 
 .vid-wrapper {
-    margin: 1rem;
+    margin: .5rem 2rem 1rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,11 +50,9 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-    margin: 1rem;
 }
  
 .quote-img {
-    border: 2px solid white;
     min-width: 17rem;
     max-width: 60rem;
     width: 100%;
@@ -63,7 +61,6 @@
 }
 
 .vid-intro-img {
-    border: 2px solid white;
     min-width: 15rem;
     max-width: 48em;
     width: 91%;

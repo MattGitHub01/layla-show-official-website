@@ -62,7 +62,7 @@ body {
 }
 
 .acc-question {
-    text-align: justify;
+    text-align: left;
     font-size: 25px;
 }
 
@@ -70,7 +70,7 @@ body {
     padding: 2rem 0 2rem 0;
     line-height: 2.15rem;
     font-size: 20px;
-    text-align: justify;
+    text-align: left;
 }
 
 .italic {
