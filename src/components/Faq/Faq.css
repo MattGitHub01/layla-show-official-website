@@ -39,6 +39,7 @@ body {
     justify-content: space-between;
     padding: 1rem 0 1rem .2rem;
 } 
+
  
 .acc-active-symbol {
     padding-right: .2rem;
@@ -60,6 +61,7 @@ body {
 }
 
 .acc-question {
+    text-align: justify;
     font-size: 25px;
 }
 
