@@ -24,7 +24,7 @@ const FaqAccordion = () => {
                     <span className="acc-question">What is the story behind <span className="italic">Layla and Other Assorted Eric Clapton Songs</span>?</span>
                     <div className="acc-active-symbol">{faqOneA ? '-' : '+'}</div>
                 </div>
-                {faqOneA && <div className="acc-content">Through dialogue, a multimedia presentation, and select songs spanning Eric Clapton&apos;s decades-long career, <span className="italic">Layla and Other Assorted Eric Clapton Songs</span> offers the audience a deeper understanding of the man behind the music, his life, and the inspiration behind some of his most beloved hits that, for many, have been the soundtrack of their lives. The show takes its name from the iconic Derek and the Dominos album <span className="italic">Layla and Other Assorted Eric Clapton Songs</span>, which features the legendary rock anthem <span className="italic">&quot;Layla&quot;</span>. Just as the album captured Eric Clapton&apos;s raw emotion and musical brilliance, the stage production draws from Clapton&apos;s rich history to offer audiences a deeper connection to his life and music.</div>}
+                {faqOneA && <div className="acc-content">Through dialogue, a multimedia presentation, and select songs spanning Eric Clapton&apos;s decades-long career, <span className="italic">Layla and Other Assorted Eric Clapton Songs</span> offers the audience a deeper understanding of the man behind the music, his life, and the inspiration behind some of his most beloved hits that, for many, have been the soundtrack of their lives. The show takes its name from the iconic Derek and the Dominos album <span className="italic">Layla and Other Assorted Eric Clapton Songs</span>, which features the legendary rock anthem <span className="italic">&quot;Layla.&quot;</span> Just as the album captured Eric Clapton&apos;s raw emotion and musical brilliance, the stage production draws from Clapton&apos;s rich history to offer audiences a deeper connection to his life and music.</div>}
                 <hr className="faq-line"></hr>
             </button>
             <button className="acc-open-link">
@@ -60,7 +60,7 @@ const FaqAccordion = () => {
                    <span className="acc-question">Is the show appropriate for minors?</span>
                     <div className="acc-active-symbol">{faqFourA ? '-' : '+'}</div>
                 </div>
-                {faqFourA && <div className="acc-content"><span className="italic">Layla and Other Assorted Eric Clapton Songs</span> is an all-ages show. No inappropriate language or imagery is used during the event with the only possible exception being the Clapton hit song, <span className="italic">&quot;Cocaine.&quot;</span> Other than the word &apos;cocaine&apos;, itself, the song lyrics are otherwise vague.</div>}
+                {faqFourA && <div className="acc-content"><span className="italic">Layla and Other Assorted Eric Clapton Songs</span> is an all-ages show. No inappropriate language or imagery is used during the event with the only possible exception being the Clapton hit song, <span className="italic">&quot;Cocaine.&quot;</span> Other than the word &apos;cocaine,&apos; itself, the song lyrics are otherwise vague.</div>}
                 <hr className="faq-line"></hr>
             </button>
             <button className="acc-open-link">

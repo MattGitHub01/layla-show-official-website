@@ -22,8 +22,8 @@ function Body() {
     return (
         <>
             <VidIntro />
-            <Dates />
             <About />
+            <Dates />
             <Cast />
         </>
     )

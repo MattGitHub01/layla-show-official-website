@@ -1,42 +1,27 @@
-@media screen and (max-width: 958px) {
+@media screen and (max-width: 970px) {
     .vid-intro-div {
         flex-wrap: wrap-reverse;
     }
 }
 
 @media screen and (min-width: 1670px) {
-    .quote-main {
-        font-size: 30px;
-    }
+
 }
 
 @media screen and (min-width: 1340px) and (max-width: 1670px) {
-    .quote-main {
-        font-size: 26px;
-    }
+
 }
 
 @media screen and (min-width: 745px) and (max-width: 1340px) {
-    .quote-main {
-        font-size: 22px;
-    }
+
 }
 
 @media screen and (max-width: 745px) {
-    .vid-quote-div {
-        max-width: 500px;
-        max-height: 150px;
-    }
+
 }
 
 @media screen and (max-width: 580px) {
-    .vid-quote-div {
-        max-width: 400px;
-        max-height: 100px;
-    }
-    .quote-main {
-        font-size: 24px;
-    }
+
 }
 
 .vid-intro-div {
@@ -46,7 +31,7 @@
 }
 
 .vid-wrapper {
-    margin: 1rem 1rem 2rem 2rem;
+    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,31 +50,23 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-    margin: 1rem 2rem 0 1rem;
-}
-
-.vid-quote-div {
-    max-height: 100px;
+    margin: 1rem;
 }
  
 .quote-img {
-    min-width: 30rem;
-    width: 100%;
+    border: 2px solid white;
+    min-width: 17rem;
     max-width: 60rem;
+    width: 100%;
     height: auto;
-}
-
-.vid-img-div {
-    display: flex;
-    justify-content: center;
-    align-items: left;
     margin: 1rem;
 }
 
 .vid-intro-img {
-    min-width: 17rem;
-    width: 100%;
+    border: 2px solid white;
+    min-width: 15rem;
     max-width: 48em;
+    width: 91%;
     height: auto;
 }
 
