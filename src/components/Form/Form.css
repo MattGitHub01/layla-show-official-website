@@ -48,11 +48,11 @@
     }
 
     .form-submit {
-        width: 270px;
+        width: 306px;
     }
 
     .captcha-div {
-        margin-left: 1.2rem;
+        margin: .5rem 0rem .5rem 1.2rem;
     }
 }
 
