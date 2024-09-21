@@ -46,7 +46,7 @@
 }
 
 .vid-wrapper {
-    margin: 1rem 2rem 2rem 2rem;
+    margin: 1rem 1rem 2rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,31 +65,18 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-    margin: 1rem 2rem 2rem 2rem;
+    margin: 1rem 2rem 0 1rem;
 }
 
 .vid-quote-div {
     max-height: 100px;
-    margin: 2rem;
-    margin-bottom: 3rem;
 }
 
-.quote-main {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: 500;
-    color: rgb(224,117,60);
-}
-
-.quote-text-1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-}
-
-.quote-text-2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-
+.quote-img {
+    min-width: 30rem;
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
 }
 
 .vid-img-div {

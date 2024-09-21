@@ -3,6 +3,7 @@
 //  VIDEO TEMP LINK https://youtu.be/p_KXY2cj-EM
 import thumbnail from '../../assets/thumbnail.jpeg'
 import vidImg from '../../assets/art-title.png'
+import quotImg from '../../assets/quote-img.png'
 import './VidIntro.css'
 
 function VidIntro() {
@@ -25,10 +26,8 @@ function VidIntro() {
                     </div> 
                 </div>
                 <div className="img-quot-wrapper">
-                <div className="vid-quote-div">
-                        <h1 className="quote-main"><span>&quot; </span>A captivating fusion of acoustic and electric in one incredible presentation.<span> &quot;</span></h1>
-                        <p className="quote-text-1">Scott Malonson</p>
-                        <p className="quote-text-2">Hi-Def Photography and Films</p>
+                    <div className="vid-quote-div">
+                        <img className="quote-img" src={quotImg}/>
                     </div>
                     <div className="vid-img-div">
                         <img 
