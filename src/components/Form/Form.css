@@ -1,5 +1,6 @@
 .contact-form {
     display: flex;
+    width: 90%;
     flex-direction: column;
     align-items: left;
     margin: 1.5rem;
@@ -8,19 +9,25 @@
 @media screen and (max-width: 698px) {
 
     .contact-form {
-        align-items: center;
+        align-items: justify;
     }
 
     .form-input {
-        width: 80%;
+        width: 90%;
     }
 
     .form-msg {
-        width: 80%;
+        width: 84%;
     }
 
     .form-submit {
-        width: 80%;
+        width: 91%;
+    }
+
+    .captcha-div {
+        width: 99%;
+        display: inline-flex;
+        justify-content: center;
     }
 }
 
@@ -31,15 +38,21 @@
     }
 
     .form-input {
-        width: 25%;
+        width: 40%;
+        min-width: 375px;
     }
 
     .form-msg {
-        width: 50%;
+        width: 60%;
+        min-width: 450px;
     }
 
     .form-submit {
-        width: 170px;
+        width: 270px;
+    }
+
+    .captcha-div {
+        margin-left: 1.2rem;
     }
 }
 
@@ -64,10 +77,6 @@
     font-size: 20px;
     padding: 20px;
     color: black;
-}
-
-.captcha-div {
-    margin-left: 1.2rem;
 }
 
 .form-submit {

@@ -43,6 +43,7 @@ body {
  
 .acc-active-symbol {
     padding-right: .2rem;
+    margin-left: 22px;
     font-size: 30px;
 }
 
