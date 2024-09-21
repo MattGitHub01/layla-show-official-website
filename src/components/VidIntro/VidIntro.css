@@ -18,19 +18,21 @@
 
 @media screen and (min-width: 745px) and (max-width: 1340px) {
     .quote-main {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
 @media screen and (max-width: 745px) {
     .vid-quote-div {
         max-width: 500px;
+        max-height: 150px;
     }
 }
 
 @media screen and (max-width: 580px) {
     .vid-quote-div {
-        max-width: 350px;
+        max-width: 400px;
+        max-height: 100px;
     }
     .quote-main {
         font-size: 24px;

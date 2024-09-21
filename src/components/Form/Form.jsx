@@ -88,7 +88,7 @@ function Form() {
                 
                 <label className="form-label" htmlFor="message">Your Message</label>
                 <textarea className="form-msg" id="message" name="message" cols={5} rows={10}></textarea>
-                <div>
+                <div className="captcha-div">
                     <ReCAPTCHA 
                         sitekey="6LfwOEoqAAAAAJlBJSR_aFAjTdbRF_9W8O7rrxQ2"
                         onChange={(value) => setCaptchaVal(value)}

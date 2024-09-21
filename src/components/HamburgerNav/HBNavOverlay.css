@@ -45,11 +45,11 @@
     height: 3px;
     border: none;
     transform: translate(0, 1px) rotate(45deg);
-    background-color: rgb(224,117,60);
+    background-color: rgb(220, 220, 220);
 }
 
 .hb-close-nav:hover > .hb-cl-top {
-    background-color: rgb(240, 163, 80);;
+    background-color: white;
 }
 
 .hb-cl-bottom {
@@ -58,11 +58,11 @@
     border: none;
     margin-bottom: 5px;
     transform: translate(0, -2px) rotate(-45deg);
-    background-color: rgb(235,198,71);
+    background-color: rgb(220, 220, 220);
 }
 
 .hb-close-nav:hover > .hb-cl-bottom {
-    background-color: rgb(248, 233, 102);
+    background-color: white;
 }
 
 .hb-cl-text {
