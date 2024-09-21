@@ -16,7 +16,7 @@
 }
 
 .cast-card-area {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,12 +25,19 @@
 }
 
 .cast-card {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 2rem;
+    margin: 1.5rem;
+}
+
+.cast-text-1 {
+    font-size: 23px;
+}
+
+.cast-text-2 {
     font-size: 18px;
 }
 
@@ -38,6 +45,7 @@
     width: 150px;
     height: 150px;
     border: 3px solid rgb(224,117,60);
+    margin: .5rem;
 }
 
 .cast-bottom-img {
