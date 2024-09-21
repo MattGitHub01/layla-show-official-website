@@ -24,13 +24,13 @@
 
 @media screen and (max-width: 745px) {
     .vid-quote-div {
-        max-width: 600px;
+        max-width: 500px;
     }
 }
 
 @media screen and (max-width: 580px) {
     .vid-quote-div {
-        max-width: 400px;
+        max-width: 350px;
     }
     .quote-main {
         font-size: 24px;
@@ -44,10 +44,7 @@
 }
 
 .vid-wrapper {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-right: 1rem; /* */
-    margin-left: 2rem;
+    margin: 1rem 2rem 2rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,12 +63,13 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-    margin: 1rem;
+    margin: 1rem 2rem 2rem 2rem;
 }
 
 .vid-quote-div {
     max-height: 100px;
-    margin: 1rem;
+    margin: 2rem;
+    margin-bottom: 3rem;
 }
 
 .quote-main {

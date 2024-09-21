@@ -59,6 +59,10 @@ body {
     background-color: rgba(211, 211, 211, .3);
 }
 
+.acc-question {
+    font-size: 25px;
+}
+
 .acc-content {
     padding: 2rem 0 2rem 0;
     line-height: 2rem;
