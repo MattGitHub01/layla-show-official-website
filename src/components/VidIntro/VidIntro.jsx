@@ -3,7 +3,7 @@
 //  VIDEO TEMP LINK https://youtu.be/p_KXY2cj-EM
 import thumbnail from '../../assets/thumbnail.jpeg'
 import vidImg from '../../assets/art-title.png'
-import quoteImg from '../../assets/quote-img-2.png'
+import quoteImg from '../../assets/quote-img.png'
 import './VidIntro.css'
 
 function VidIntro() {

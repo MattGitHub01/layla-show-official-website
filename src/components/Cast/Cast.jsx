@@ -55,7 +55,7 @@ function Cast() {
                             src={lillyImg} 
                             alt="Image of Lilly Bjorklund" 
                         />
-                        <h2 className="cast-text-1">Lilly Bjorklund</h2><h3 className="cast-text-2">Vocals, Guitar & Mandolin</h3>
+                        <h2 className="cast-text-1">Lily Bjorklund</h2><h3 className="cast-text-2">Vocals, Guitar & Mandolin</h3>
                     </div>
                     <div 
                         className="cast-card"

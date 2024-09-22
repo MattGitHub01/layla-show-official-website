@@ -60,7 +60,7 @@ const FaqAccordion = () => {
                    <span className="acc-question">Is the show appropriate for minors?</span>
                     <div className="acc-active-symbol">{faqFourA ? '-' : '+'}</div>
                 </div>
-                {faqFourA && <div className="acc-content"><span className="italic">Layla and Other Assorted Eric Clapton Songs</span> is an all-ages show. No inappropriate language or imagery is used during the event with the only possible exception being the Clapton hit song, <span className="italic">&quot;Cocaine.&quot;</span> Other than the word &apos;cocaine,&apos; itself, the song lyrics are otherwise vague.</div>}
+                {faqFourA && <div className="acc-content"><span className="italic">Layla and Other Assorted Eric Clapton Songs</span> is an all-ages show. No inappropriate language or imagery is used during the event with the only possible exception being the Clapton hit song, <span className="italic">&quot;Cocaine.&quot;</span> Other than the word &quot;cocaine,&quot; itself, the song lyrics are otherwise vague.</div>}
                 <hr className="faq-line"></hr>
             </button>
             <button className="acc-open-link">

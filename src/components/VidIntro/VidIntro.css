@@ -2,27 +2,28 @@
     .vid-intro-div {
         flex-wrap: wrap-reverse;
     }
+
+    .quote-img {
+        margin-left: 2rem;
+        width: 84%;
+    }
+
+    .vid-intro-img {
+        margin-left: 2rem;
+        width: 80%;
+    }
 }
 
-@media screen and (min-width: 1670px) {
-
+@media screen and (min-width: 971px) {
+    .vid-intro-img {
+        width: 96%;
+    }
+ 
+    .quote-img {
+        width: 97%;
+    }
 }
 
-@media screen and (min-width: 1340px) and (max-width: 1670px) {
-
-}
-
-@media screen and (min-width: 745px) and (max-width: 1340px) {
-
-}
-
-@media screen and (max-width: 745px) {
-
-}
-
-@media screen and (max-width: 580px) {
-
-}
 
 .vid-intro-div {
     display: flex;
@@ -39,7 +40,7 @@
 
 .video {
     border: 2px solid white;
-    width: 100% !important; 
+    width: 100% !important;
     max-width: 100em;
     height: auto !important;
 }
@@ -53,17 +54,19 @@
 }
  
 .quote-img {
+    margin-top: .5rem;
+    margin-right: 2rem;
     min-width: 17rem;
     max-width: 60rem;
-    width: 100%;
+
     height: auto;
-    margin: 1rem;
 }
 
 .vid-intro-img {
+    margin-right: 2rem;
     min-width: 15rem;
     max-width: 48em;
-    width: 91%;
+
     height: auto;
 }
 
