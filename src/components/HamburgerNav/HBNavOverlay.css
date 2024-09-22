@@ -23,7 +23,7 @@
 
 .is-open { 
     opacity: .5;
-    top: -1000px;
+    top: -800px;
     transition: all .4s;
 }
 

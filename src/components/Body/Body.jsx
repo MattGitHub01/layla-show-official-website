@@ -1,36 +1,43 @@
-import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
-import VidIntro from '../VidIntro/VidIntro.jsx'
-import Dates from '../Dates/Dates.jsx'
-import About from '../About/About.jsx'
-import Cast from '../Cast/Cast.jsx'
-import './Body.css'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import VidIntro from '../VidIntro/VidIntro.jsx';
+import Dates from '../Dates/Dates.jsx';
+import About from '../About/About.jsx';
+import Cast from '../Cast/Cast.jsx';
+import './Body.css';
 
 function Body() {
     const location = useLocation();
 
+    const getFixedHeaderHeight = () => {
+        const header = document.querySelector('header');
+        return header.offsetHeight;
+    };
+
+    const scrollToTargetElement = (hash) => {
+        const scrollTarget = document.querySelector(hash);
+        if (scrollTarget) {
+            const fixedHeaderHeight = getFixedHeaderHeight();
+            const targetPosition = scrollTarget.getBoundingClientRect().top + window.scrollY - fixedHeaderHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth',
+            });
+        }
+    };
+
     useEffect(() => {
-        const scrollToHash = () => {
-            const hash = location.hash;
-            if (hash) {
-                const scrollTarg = document.querySelector(hash);
-                if (scrollTarg) {
-                    // Timer added to allow page to fully render before scroll
-                    setTimeout(() => {
-                        scrollTarg.scrollIntoView({ behavior: 'smooth'});
-                    }, 100);
-                }
+        const hash = location.hash; // Get the hash from the URL
+        if (hash) {
+            if (document.readyState === 'complete') {
+                scrollToTargetElement(hash); // Scroll to the target if the page is fully loaded
+            } else {
+                window.addEventListener('load', () => scrollToTargetElement(hash)); // Wait for the page to load if necessary
+                return () => window.removeEventListener('load', () => scrollToTargetElement(hash)); //
             }
         }
-        // Check if page has completely loaded
-        if (document.readyState === 'complete') {
-            scrollToHash();
-        } else {
-            // If page is loading, wait and then scroll
-            window.addEventListener('load', scrollToHash);
-            return () => window.removeEventListener('load', scrollToHash);
-        }
-    }, [location]);
+    }, [location]); // Trigger effect when location changes (page navigation)
 
     return (
         <>
@@ -39,7 +46,7 @@ function Body() {
             <Dates />
             <Cast />
         </>
-    )
+    );
 }
 
-export default Body
+export default Body;

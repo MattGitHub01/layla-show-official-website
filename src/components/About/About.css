@@ -1,6 +1,33 @@
-#about {
-    scroll-margin-top: -27vh;
+@media (max-width: 540px) {
+    #about {
+        scroll-margin-top: 1rem;
+    }
 }
+
+@media (min-width: 541px) and (max-width: 675px) {
+    #about {
+        scroll-margin-top: 4rem;
+    }
+}
+
+@media (min-width: 676px) and (max-width: 840px) {
+    #about {
+        scroll-margin-top: 4rem;
+    }
+}
+
+@media (min-width: 841px) and (max-width: 920px) {
+    #about {
+        scroll-margin-top: 4rem;
+    }
+}
+
+@media (min-width: 921px) {
+    #about {
+        scroll-margin-top: 4rem;
+    }
+}
+
 
 .about {
     display: flex;

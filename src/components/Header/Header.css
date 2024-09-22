@@ -79,7 +79,8 @@
 
 header {
     z-index: 1001;
-    position: sticky;
+    position: fixed;
+    width: 99%;
     top: 0;
     background-color: black;
     padding: .13rem;
