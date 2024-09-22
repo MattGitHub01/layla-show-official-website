@@ -8,7 +8,7 @@ import youtubeHov from '../../assets/youtube-hover.svg'
 import './HBNavOverlay.css'
 import './HamburgerNav.css'
 
-function HBNavOverlay(props) {
+function HBNavOverlay(props) { 
     const [isEffect, setIsEffect] = useState(true);
     const clsProp = props.closeOverlay;
     // clsProp closes the nav menu with a prop from the HamburgerNav button to open it there and close it here. setIsEffect controls the close scroll up visual effect
