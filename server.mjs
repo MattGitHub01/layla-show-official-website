@@ -8,7 +8,7 @@ import cors from 'cors';
 
 const app = express();
 
-// Adding Google reCAPTCHA CSP and allowing API connections to Railway and EmailJS
+// Helmet CSP
 app.use(
     helmet.contentSecurityPolicy({
         directives: {
@@ -17,12 +17,12 @@ app.use(
             scriptSrcElem: ["'self'", "https://www.google.com/recaptcha/", "https://www.gstatic.com/recaptcha/"],
             connectSrc: [
                 "'self'", 
-                "http://localhost:8080",
+                "https://layla-show-official-website-production.up.railway.app",
                 "https://api.emailjs.com" // Allow EmailJS API
             ],
             imgSrc: ["'self'", "data:"],
             mediaSrc: ["'self'"],
-            frameSrc: ["'self'", "https://www.google.com", "https://www.gstatic.com"], // Allow iframes from Google reCAPTCHA
+            frameSrc: ["'self'", "https://www.google.com", "https://www.gstatic.com"], // Allow iframes for Google reCAPTCHA
         },
     })
 );
@@ -35,13 +35,13 @@ const PORT = process.env.PORT || 8080;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Handle OPTIONS preflight requests for the reCAPTCHA route
+// Handle OPTIONS preflight requests
 app.options('*', cors());
 
 
-// Configure CORS to work with localhost:8080
+// Configure CORS to work with server
 app.use(cors({
-    origin: 'http://localhost:8080', 
+    origin: "https://layla-show-official-website-production.up.railway.app", 
     methods: ['GET', 'POST', 'OPTIONS'], 
     allowedHeaders: ['Content-Type'], 
 }));
@@ -75,7 +75,6 @@ app.post('/api/verify-captcha', async (req, res) => {
     }
 });
 
-// Serve the index.html file for any other GET requests
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });

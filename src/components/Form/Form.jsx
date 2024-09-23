@@ -28,7 +28,8 @@ function Form() {
         setErrorMessage('');
 
         try {
-            const response = await fetch('http://localhost:8080/api/verify-captcha', {
+            // Change fetch url to production server for ReCAPTCHA function
+            const response = await fetch('https://layla-show-official-website-production.up.railway.app/api/verify-captcha', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

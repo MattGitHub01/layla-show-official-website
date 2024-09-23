@@ -1,4 +1,4 @@
-import video from '../../assets/layla-show-final.mp4'
+// import video from '../../assets/layla-show-final.mp4'
 
 //  VIDEO TEMP LINK https://youtu.be/p_KXY2cj-EM
 import thumbnail from '../../assets/thumbnail.jpeg'
@@ -19,7 +19,7 @@ function VidIntro() {
                         controls
                         autoPlay
                     > 
-                        <source src={video} type="video/mp4"/>
+                        <source src="https://youtu.be/p_KXY2cj-EM" type="video/mp4"/>
                     </video>
                 </div>
                 <div className="img-quot-wrapper">

@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer.jsx'
 import './App.css'
 import { useState, useEffect } from 'react'
 
-function App() {    
+function App() {
     const [hasError, setHasError] = useState(false)
 
     useEffect(() => {
