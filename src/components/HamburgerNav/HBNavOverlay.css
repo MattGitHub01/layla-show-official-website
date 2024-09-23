@@ -1,7 +1,7 @@
 @keyframes fadeOpen {
     from {
         opacity: .5;
-        top: -800px;
+        top: -130vh;
     }
 
     to {
@@ -14,17 +14,18 @@
     display: block;
     position: absolute;
     width: 100vw;
+    height: 100vh;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    animation: fadeOpen .4s ease-in;
+    animation: fadeOpen .5s ease-in;
 }
 
 .is-open { 
     opacity: .5;
-    top: -800px;
-    transition: all .4s;
+    top: -130vh;
+    transition: all .5s;
 }
 
 .hb-close-nav {

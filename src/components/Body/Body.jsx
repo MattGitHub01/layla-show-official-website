@@ -33,11 +33,11 @@ function Body() {
             if (document.readyState === 'complete') {
                 scrollToTargetElement(hash); // Scroll to the target if the page is fully loaded
             } else {
-                window.addEventListener('load', () => scrollToTargetElement(hash)); // Wait for the page to load if necessary
-                return () => window.removeEventListener('load', () => scrollToTargetElement(hash)); //
+                window.addEventListener('load', () => scrollToTargetElement(hash)); // Wait for the page to load if it hasn't yet
+                return () => window.removeEventListener('load', () => scrollToTargetElement(hash));
             }
         }
-    }, [location]); // Trigger effect when location changes (page navigation)
+    }, [location]); // Trigger useEffect on page load
 
     return (
         <>

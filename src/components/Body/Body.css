@@ -1,7 +1,8 @@
 body {
-    background: black;
-    animation: fadeIn .5s;
-  }
+  padding-top: 60px;
+  background: black;
+  animation: fadeIn .6s;
+}
     
   @keyframes fadeIn {
     from {

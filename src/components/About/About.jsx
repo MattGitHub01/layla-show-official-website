@@ -6,7 +6,6 @@ import './About.css'
 function About() {
     return (
         <div 
-            id="about"
             className="about" 
             aria-label="About the production section"
         >
@@ -16,6 +15,7 @@ function About() {
                 alt="Guitarists and drummer preforming live" 
             />
             <img
+                id="about"
                 className="about-header-img"
                 src={aboutTextImg}
                 alt="Image text reads: a celebration of a musical icon"

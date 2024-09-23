@@ -11,7 +11,7 @@ import './HamburgerNav.css'
 function HBNavOverlay(props) { 
     const [isEffect, setIsEffect] = useState(true);
     const clsProp = props.closeOverlay;
-    // clsProp closes the nav menu with a prop from the HamburgerNav button to open it there and close it here. setIsEffect controls the close scroll up visual effect
+    // clsProp opens and closes the overlay. It opens in HamburgerNav and closes here
     function closeOverlay() {
         setIsEffect(false);
         clsProp();
@@ -29,8 +29,8 @@ function HBNavOverlay(props) {
                 <text className="hb-cl-text">CLOSE</text>
             </div>
             <div className="hb-flexbox">
-                <a className="hb-nav-link" href="/#tour-dates" onClick={closeOverlay}>tour dates</a>
                 <a className="hb-nav-link" href="/#about" onClick={closeOverlay}>about</a>
+                <a className="hb-nav-link" href="/#tour-dates" onClick={closeOverlay}>tour dates</a>
                 <a className="hb-nav-link" href="/#cast" onClick={closeOverlay}>cast</a>
                 <a className="hb-nav-link" href="/faq">FAQ</a>
                 <a className="hb-nav-link" href="/contact-form">contact</a>
