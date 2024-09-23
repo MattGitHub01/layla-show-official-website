@@ -1,6 +1,4 @@
-// import video from '../../assets/layla-show-final.mp4'
-
-//  VIDEO TEMP LINK https://youtu.be/p_KXY2cj-EM
+// import video from '../../assets/layla-show-final.mp4' VIDEO TEMP LINK https://youtu.be/p_KXY2cj-EM
 import thumbnail from '../../assets/thumbnail.jpeg'
 import vidImg from '../../assets/art-title.png'
 import quoteImg from '../../assets/quote-img.png'
@@ -19,7 +17,7 @@ function VidIntro() {
                         controls
                         autoPlay
                     > 
-                        <source src="https://youtu.be/p_KXY2cj-EM" type="video/mp4"/>
+                        <source src={video} type="video/mp4"/>
                     </video>
                 </div>
                 <div className="img-quot-wrapper">

@@ -49,7 +49,7 @@ createRoot(document.getElementById('root')).render(
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Layla and Other Assorted Eric Clapton Songs" />
     <meta property="og:description" content="Get ready for an electrifying live performance with My Band!" />
-    <meta property="og:url" content="https://laylashow.com/" />
+    <meta property="og:url" content="http://www.laylashow.com/" />
     </Helmet>
     <RouterProvider router={clientRouter} />
   </StrictMode>,

@@ -5,8 +5,11 @@ import helmet from 'helmet';
 import axios from 'axios';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import compression from 'compression';
 
 const app = express();
+
+app.use(compression());
 
 // Helmet CSP
 app.use(
@@ -16,7 +19,7 @@ app.use(
             scriptSrc: ["'self'", "https://www.google.com/recaptcha/", "https://www.gstatic.com/recaptcha/"],
             scriptSrcElem: ["'self'", "https://www.google.com/recaptcha/", "https://www.gstatic.com/recaptcha/"],
             connectSrc: [
-                "'self'", 
+                "'self'",
                 "https://layla-show-official-website-production.up.railway.app",
                 "https://api.emailjs.com" // Allow EmailJS API
             ],
