@@ -8,28 +8,48 @@ import cors from 'cors';
 
 const app = express();
 
-app.use(helmet());
+// Adding Google reCAPTCHA CSP and allowing API connections to Railway and EmailJS
+app.use(
+    helmet.contentSecurityPolicy({
+        directives: {
+            defaultSrc: ["'self'"],
+            scriptSrc: ["'self'", "https://www.google.com/recaptcha/", "https://www.gstatic.com/recaptcha/"],
+            scriptSrcElem: ["'self'", "https://www.google.com/recaptcha/", "https://www.gstatic.com/recaptcha/"],
+            connectSrc: [
+                "'self'", 
+                "http://localhost:8080",
+                "https://api.emailjs.com" // Allow EmailJS API
+            ],
+            imgSrc: ["'self'", "data:"],
+            mediaSrc: ["'self'"],
+            frameSrc: ["'self'", "https://www.google.com", "https://www.gstatic.com"], // Allow iframes from Google reCAPTCHA
+        },
+    })
+);
+
 dotenv.config();
 
-const PORT = process.env.PORT || 8080; // CHANGE PORT FOR RAILWAY DEMO
+const PORT = process.env.PORT || 8080; 
 
 // Get __dirname in ES module
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const allowedOrigin = process.env.FRONTEND_URL;
+// Handle OPTIONS preflight requests for the reCAPTCHA route
+app.options('*', cors());
 
 
+// Configure CORS to work with localhost:8080
 app.use(cors({
-    origin: allowedOrigin, // Change for production / deployment 
-    methods: ['GET', 'POST'],
-    allowedHeaders: ['Content-Type'],
+    origin: 'http://localhost:8080', 
+    methods: ['GET', 'POST', 'OPTIONS'], 
+    allowedHeaders: ['Content-Type'], 
 }));
 
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use(express.json());
 
-// Handle POST requests to verify Google ReCAPTCHA
+// Handle POST requests to verify Google reCAPTCHA
 app.post('/api/verify-captcha', async (req, res) => {
     const { captcha } = req.body;
     const SECRET_KEY = process.env.RECAPTCHA_SECRET_KEY;
@@ -45,7 +65,7 @@ app.post('/api/verify-captcha', async (req, res) => {
         const { success } = response.data;
 
         if (success) {
-            return res.status(200).json({ message: "Success!  ReCAPTCHA verified!" });
+            return res.status(200).json({ message: "Success! ReCAPTCHA verified!" });
         } else {
             return res.status(400).json({ message: "Failed! ReCAPTCHA not verified!" });
         }
