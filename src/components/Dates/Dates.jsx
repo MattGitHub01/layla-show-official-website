@@ -18,6 +18,7 @@ function Dates() {
                 <a 
                     className="tour-button-style" 
                     href="/coming-soon"
+                    target="_blank"
                 >
                     LEARN MORE
                 </a>
@@ -30,6 +31,7 @@ function Dates() {
                 <a 
                     className="tour-button-style" 
                     href="https://utetheater.com/event/forever-man-layla-other-assorted-eric-clapton-songs/"
+                    target="_blank"
                 >
                     LEARN MORE
                 </a>
@@ -42,6 +44,7 @@ function Dates() {
                 <a 
                     className="tour-button-style" 
                     href="/coming-soon"
+                    target="_blank"
                 >
                     LEARN MORE
                 </a>
@@ -54,6 +57,7 @@ function Dates() {
                 <a 
                     className="tour-button-style" 
                     href="/coming-soon"
+                    target="_blank"
                 >
                     LEARN MORE
                 </a>
