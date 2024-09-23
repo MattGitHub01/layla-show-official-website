@@ -1,13 +1,16 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import helmet from 'helmet';
 import axios from 'axios';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
+const app = express();
+
+app.use(helmet());
 dotenv.config();
 
-const app = express();
 const PORT = process.env.PORT || 8080; // CHANGE PORT FOR RAILWAY DEMO
 
 // Get __dirname in ES module
