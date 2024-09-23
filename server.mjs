@@ -6,12 +6,11 @@ import axios from 'axios';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import compression from 'compression';
-
 const app = express();
 
+dotenv.config();
 app.use(compression());
 
-// Helmet CSP
 app.use(
     helmet.contentSecurityPolicy({
         directives: {
@@ -29,8 +28,6 @@ app.use(
         },
     })
 );
-
-dotenv.config();
 
 const PORT = process.env.PORT || 8080; 
 
@@ -82,4 +79,4 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV} mode`));
